@@ -173,6 +173,55 @@ Slumpgenerator
 \end_layout
 
 \begin_layout Standard
+När projektet påbörjades var tanken att en elektronisk slumpgenerator skulle
+ användas för att bestämma hur ofta högtalaren skulle pipa då en lampa släcktes.
+\end_layout
+
+\begin_layout Standard
+Den första slumpgeneratorn som kom på tal var en brusfiltrerande krets.
+ Denna krets skulle bestå av en del där ett brus uppstår, en del som filtrerar
+ bort hela den ursprungliga signalen så att bara bruset återstår.
+ Sedan ett bandpassfilter så att bara de önskvärda frekvenserna kommer igenom
+ och vidare ut till en förstärkare som förstärker amplutiden på det återstående
+ bruset; detta för att med större säkerhet kunna jämföra brusets amplituder
+ i en schmitt-trigger, och på så sätt få en någorlunda slumpmässig följd
+ av ettor och nollor.
+ Dessa ettor och nollor skulle sedan användas för att ”öppna” eller ”sluta”
+ en transistor för att släppa igenom en signal till högtalaren som då på
+ gränsen till slumpmässigt borde pipa med en begränsad frekvens.
+\end_layout
+
+\begin_layout Standard
+Det visade sig dock ganska snabbt att det var mycket svårt att filtrera
+ ut brus på det sett det var tänkt, och att den absolut största delen av
+ alla brusfiltrerande kretsar vi undersökt har som mål att filtrera bort
+ brus, och inte tvärt om.
+ Detta gjorde det problematiskt att använda någon form av brus över huvud
+ taget.
+\end_layout
+
+\begin_layout Standard
+Då påbörjades en sökning för att hitta en annan sorts slumpgenerator eller
+ pseudo-slumpgenerator.
+ Även dessa typer av slumpgeneratorer visade sig väldigt komplicerade, och
+ de flesta av dem bestod av väldigt många komponenter.
+\end_layout
+
+\begin_layout Standard
+Däremot hittades en artikel på http://www.ietlabs.com/pdf/GR_Experimenters/1960/Ge
+nRad_Experimenter_Jan_1960.pdf om ett prejekt som genomfördes 1960 som tydligt
+ visar hur man skulle kunna skapa en elektrisk slumpgenerator.
+ Detta var den minsta krets, som både gav i från sig ett statistiskt sett
+ slumpmässigt brus och innehöll minst komponenter som hittades.
+ Även denna krets slopades då den ansågs vara för komplicerad och för stor
+ för att appliceras på våra kopplingsplattor, eftersom även denna krets
+ hade behövt tillägg i form av en filterkrets för att få rätt frekvensomfång
+ och rätt logiska funktion för distinkta pip i högtalaren vid slumpmässiga
+ tillfällen.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
