@@ -99,7 +99,7 @@ Max Wiens uppfinning från 1891, wienbryggan är en sinus-oscillator som idag
  med lampan fås nämligen en sinusvåg ut med en distortion på mindre på ca
  0,0025%.
  Anledningen till att han valde att använda en helt vanlig glödlampa var
- på eftersom att dess resistans är direkt proportionell mot värmen i glödtråden.
+ att dess resistans är direkt proportionell mot värmen i glödtråden.
  Även om lampan aldrig lyser hjälper den till att stabilisera kretsen.
  Tar man bort lampan blir effekten att topparna på sinusvågen blir kapade
  samt att vågen inte håller samma stabilitet.
@@ -107,7 +107,8 @@ Max Wiens uppfinning från 1891, wienbryggan är en sinus-oscillator som idag
  I kretsen är Motstånden dimensionerade så att R2=R1.
  Detta vilkor samt att C1=C2 måste alltid behållas för en fungerande krets.
  Med hjälp av potentiometern kan frekvensen finjusteras.
- 
+ Frekvensen påverkas även väldigt mycket av storlekarna på R1,R2,C1 och
+ C2.
 \end_layout
 
 \begin_layout Subsection
@@ -323,10 +324,6 @@ Kretschema som visar en SR-vippa.
 
 \begin_layout Section
 Källor
-\end_layout
-
-\begin_layout Standard
-boat's and hos!!
 \end_layout
 
 \begin_layout Subsection
