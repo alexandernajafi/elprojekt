@@ -94,7 +94,14 @@ Max Wiens uppfinning från 1891, wienbryggan är en sinus-oscillator som idag
  Wienbryggan kan användas för att på ett mycket enkelt sätt generarea en
  klar sinusvåg inom ett mycket brett frekvensband.
  Wienbryggan som beskrevs av Hewlet var dock inte fullt så enkel som den
- som synes i Figur 1.
+ som synes i Figur
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:wienbridge"
+
+\end_inset
+
+.
  Hewlet använde en lampa för att stabilisera kretsen samt få en finare sinusvåg,
  med lampan fås nämligen en sinusvåg ut med en distortion på mindre på ca
  0,0025%.
@@ -130,8 +137,21 @@ SR-vippa
 Sr-vippan är den enklaste av alla vippor.
  Dess konstruktion tillåter den att lagra ett digitalt värde, 1 eller 0.
  Dess funktioner är dock få.
- Med två ingångar (se Figur 2, S och R) ch två utgångar (se Figur 2, Q1
- och Q2) kan SR-vippan endast sätta ett värde eller återställas.
+ Med två ingångar (se Figur 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:srlatch"
+
+\end_inset
+
+, S och R) och två utgångar (se Figur 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:srlatch"
+
+\end_inset
+
+, Q1 och Q2) kan SR-vippan endast sätta ett värde eller återställas.
  När en digital signal skickas på ingången S, samtidigt som R är en digital
  0:a, sparas en digital 1:a i SR-vippan.
  Skulle sedan istället en digital 1:a skickas på S-ingången återställs 
@@ -155,7 +175,14 @@ JK-vippa
 \end_layout
 
 \begin_layout Standard
-JK-vippan är den mest mångsidiga av de enklare vipporna, se figur 3.
+JK-vippan är den mest mångsidiga av de enklare vipporna, se figur 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:jklatch"
+
+\end_inset
+
+.
  Man kan på ett enkelt sätt beskriva den som en SR-vippa med fler funktioner.
  Den kan precis som SR-vippan lagra ett värde.
  Detta gör den då en digital 1:a skickas på J-ingången samtidigt som K-ingågen
@@ -253,7 +280,14 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Kretschema som visar en wien-brygga.
+Kretschema som visar en wienbrygga.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:wienbridge"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -267,17 +301,20 @@ Kretschema som visar en wien-brygga.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
 Kretschema som visar en JK-vippa.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:jklatch"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -298,6 +335,12 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename bilder/srlatch.pdf
+	width 50page%
+
+\end_inset
+
 
 \end_layout
 
@@ -306,6 +349,13 @@ status collapsed
 
 \begin_layout Plain Layout
 Kretschema som visar en SR-vippa.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:srlatch"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
