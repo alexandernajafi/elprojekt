@@ -229,6 +229,93 @@ nRad_Experimenter_Jan_1960.pdf om ett prejekt som genomfördes 1960 som tydligt
 \end_layout
 
 \begin_layout Section
+Utförande
+\end_layout
+
+\begin_layout Standard
+Det första som gjordes var att dela upp kretsen i mindre delar så att dessa
+ kunde byggas och testas separat för att sedan sammanfoga.
+ Den första skissen på hur kretsen väntades se ut bestod av en del som gav
+ en slumpmässig insignal (Slumpkrets), en ljuskänslig del (Ljuskänslig givare),
+ en del som begränsade ljudets längd (Vippa) samt en del som producerade
+ och emmiterade ett högfrekvent ljud (Ljud).
+ Den första skissen kan hittas i bilaga ().
+ Det bestämdes tidigt att kretsbyggnadsprocessen skulle fokusera på att
+ leda till en krets som producerar ett kort högfrekvent ljud då den placeras
+ i en mörk omgivning; slumpmässigheten ansågs vara en sekundär prioritering.
+ Processen för varje del i den större kretsen beskrivs under respektive
+ underrubrik nedan.
+\end_layout
+
+\begin_layout Subsection
+Ljuskänslig givare
+\end_layout
+
+\begin_layout Standard
+Dagen efter mötet då den första skissen presenterades konstaterades att
+ den ljuskänsliga delen skulle placeras tidigare i kretsen, där den skulle
+ fungera som brytare för resten av kretsen.
+ Detta för att minimera energikonsumtionen då kretsen inte befinner sig
+ i mörker.
+ Det bästa valet av fototransistor verkade vara en skymningssensor, då den
+ skulle skilja på det ljus rummet innehar dagtid och det mörker som infaller
+ nattetid.
+ En vanlig fototransistor var dock fullt tillräcklig för uppgiften.
+ Efter ett möte med handledare hade en fototransistor förvärvats, vilken
+ en kretsdel började byggas runt.
+ Först testades transistorn genom en ström-spänningsförstärkare, med osäkert
+ resultat.
+ Även utan signal in i förstärkaren blev utsignalen lika stor som Vcc.
+ Att detta första försök till ström-spänningsförstärkning blev felaktigt,
+ ledde till att ############ Efter lite research hos andra grupper valdes
+ istället en annan fototransistor.
+ Denna fototransistor (5 mm SI-NPN) hade en centralvåglängd på 940 nm vilken
+ fungerade betydligt då den faktiskt reagerade på ljusskillnader.
+\end_layout
+
+\begin_layout Subsection
+Vippa
+\end_layout
+
+\begin_layout Standard
+Kretsen som skulle göra att utsignalen höll sig stabil under den tiden då
+ ljudet skulle låta, oberoende av hur lång den “slumpmässiga” insignalen
+ var, tänktes ursprungligen åstadkommas med hjälp av någon slags bistabil
+ krets eller vippa.
+ Idén om vippan kretsade omkring att återkoppla dess utsignal till dess
+ insignal efter en viss fördröjning.
+ Den första prototypen tänktes byggas med en JK-Vippa men denna lösning
+ sågs bristfällig och lades snart åt sidan efter en diskussion med vår handledar
+e Elvedin.
+ Istället valdes en SR-Vippa.
+ Denna bistabila krets syntes vara lösningen på våra problem.
+ Med denna idé byggdes en enkel modell av hjälp av två stycken logiska NAND-grin
+dar.
+ Efter vissa komplikationer med testning av denna del av kretsen förstods
+ snart att detta berodde på att ingångarna lämnades ojordade när tester
+ pågick av den andra ingången, detta ledde till helt felaktiga mätresultat
+ och en ickefungerande krets.
+ När detta pinsamma misstag upptäkts kunde kretsen snabbt färdigställas.
+ Nästa utmaning bestod av att på något sätt tillverka en fördröjning av
+ signalen som återkopplades till reset ingången som får kretsen att sluta
+ pipa.
+ Den första idén om lösning på problemet vara att seriekoppla en kondensator
+ och få denna att laddas upp för att sedan skicka vidare en inverterad utsignal,
+ men denna idé kasserades likt den förra efter ett fåtal tester som frambringade
+ dess inkompabilitet med kretsen.
+ En alternativ tackling till problemet kom att bli att seriekoppla en resistans
+ med en kondensator, som båda noggrant uppmättes för att få en eftertraktad
+ längd på pipet.
+ Utsignalen hämtades över kondensatorn och leddes tillbaka till respektive
+ ingång.
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Bilaga 1/1
 \end_layout
 
