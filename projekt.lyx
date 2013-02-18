@@ -278,7 +278,7 @@ re som komparator, ett RC-filter samt en potentiometer för att ställa tiden.
  I slutet av kretsen kunde även en resistans och en diod kopplas till för
  att ladda ur RC-filtret som används, detta för att återställa tidfördröjningen
  efter att spänning bryts.
- Denna upptäckt skedde dock för sent för att den krets som byggs skulle
+ Denna upptäckt skedde dock för sent för att den krets som byggts skulle
  hinna ändras, däremot har kretsen redan från början varit bygg för att
  en slump- eller tidsfördröjningskrets skulle kunna kopplas på.
  Därav kretsens utseende.
