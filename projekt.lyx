@@ -116,8 +116,8 @@ Vippor
 \end_layout
 
 \begin_layout Standard
-Begreppet vippor används för att gruppera de kretsat som med hjälp av två
- olika läge kan användas för att lagra digital data, samt utföra en enkel
+Begreppet vippor används för att gruppera de kretsar som med hjälp av två
+ olika lägen kan användas för att lagra digital data, samt utföra en enkel
  operation beroende på det lagrade värdet.
  
 \end_layout
@@ -130,7 +130,7 @@ SR-vippa
 Sr-vippan är den enklaste av alla vippor.
  Dess konstruktion tillåter den att lagra ett digitalt värde, 1 eller 0.
  Dess funktioner är dock få.
- Med två ingångar (se Figur 2, S och R) ch två utgångar (se Figur 2, Q1
+ Med två ingångar (se Figur 2, S och R) och två utgångar (se Figur 2, Q1
  och Q2) kan SR-vippan endast sätta ett värde eller återställas.
  När en digital signal skickas på ingången S, samtidigt som R är en digital
  0:a, sparas en digital 1:a i SR-vippan.
@@ -165,7 +165,7 @@ JK-vippan är den mest mångsidiga av de enklare vipporna, se figur 3.
  Tillskillnad från SR-vippan kan däremot JK-vippan skifta sitt lagrade värde.
  Detta görs då både K och J är en digital 1:a.
  På så sätt kan J- och K-ingången kopplas samman och fungera som en T-vippa.
- En T-vippar skiftar värde varje gång en digital 1:a skickas på ingången.
+ En T-vippa skiftar värde varje gång en digital 1:a skickas på ingången.
  JK-vippan används vanligen mycket flitigt vid byggen av binära räknare.
 \end_layout
 
@@ -175,7 +175,8 @@ Slumpgenerator
 
 \begin_layout Standard
 När projektet påbörjades var tanken att en elektronisk slumpgenerator skulle
- användas för att bestämma hur ofta högtalaren skulle pipa då en lampa släcktes.
+ användas för att bestämma hur ofta högtalaren skulle pipa då kretsen stod
+ i mörker.
 \end_layout
 
 \begin_layout Standard
@@ -187,14 +188,14 @@ Den första slumpgeneratorn som kom på tal var en brusfiltrerande krets.
  bruset; detta för att med större säkerhet kunna jämföra brusets amplituder
  i en schmitt-trigger, och på så sätt få en någorlunda slumpmässig följd
  av ettor och nollor.
- Dessa ettor och nollor skulle sedan användas för att ”öppna” eller ”sluta”
+ Dessa ettor och nollor skulle sedan användas som gate-source-spänning till
  en transistor för att släppa igenom en signal till högtalaren som då på
- gränsen till slumpmässigt borde pipa med en begränsad frekvens.
+ gränsen till slumpmässigt borde pipa med en bestämd frekvens.
 \end_layout
 
 \begin_layout Standard
 Det visade sig dock ganska snabbt att det var mycket svårt att filtrera
- ut brus på det sett det var tänkt, och att den absolut största delen av
+ ut brus på det sätt det var tänkt, och att den absolut största delen av
  alla brusfiltrerande kretsar vi undersökt har som mål att filtrera bort
  brus, och inte tvärt om.
  Detta gjorde det problematiskt att använda någon form av brus över huvud
@@ -209,9 +210,8 @@ Då påbörjades en sökning för att hitta en annan sorts slumpgenerator eller
 \end_layout
 
 \begin_layout Standard
-Däremot hittades en artikel på http://www.ietlabs.com/pdf/GR_Experimenters/1960/Ge
-nRad_Experimenter_Jan_1960.pdf om ett prejekt som genomfördes 1960 som tydligt
- visar hur man skulle kunna skapa en elektrisk slumpgenerator.
+Däremot hittades en artikel på internet om ett projekt som genomfördes 1960
+ som tydligt visar hur man skulle kunna skapa en elektrisk slumpgenerator.
  Detta var den minsta krets, som både gav i från sig ett statistiskt sett
  slumpmässigt brus och innehöll minst komponenter som hittades.
  Även denna krets slopades då den ansågs vara för komplicerad och för stor
@@ -341,6 +341,10 @@ Internet
 
 \begin_layout Standard
 www.hyperphysics.phy-astr.gsu.edu/hbase/electronic/flipflop.html
+\end_layout
+
+\begin_layout Standard
+http://www.ietlabs.com/pdf/GR_Experimenters/1960/GenRad_Experimenter_Jan_1960.pdf
 \end_layout
 
 \end_body
