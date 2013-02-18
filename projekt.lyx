@@ -1,0 +1,297 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Syskonretaren
+\end_layout
+
+\begin_layout Date
+2013-02-22
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teori
+\end_layout
+
+\begin_layout Subsection
+Wien-brygga
+\end_layout
+
+\begin_layout Standard
+Max Wiens uppfinning från 1891, wienbryggan är en sinus-oscillator som idag
+ är ett av de enklaste sätten att omvandla en DC-spänning till en klar sinusvåg.
+ En förenkling av denna skrev Wilam R.
+ Hewlet om i sitt mastersarbete från Stanford 1939.
+ När en wienbrygga senare nämns i denna text syftas det på den senare som
+ Hewlet beskrev.
+ En wienbrygga kan med hjälp av endast två kondensatorer och fyra resitorer
+ samt en OP-förstärkare konstrueras.
+ Wienbryggan kan användas för att på ett mycket enkelt sätt generarea en
+ klar sinusvåg inom ett mycket brett frekvensband.
+ Wienbryggan som beskrevs av Hewlet var dock inte fullt så enkel som den
+ som synes i Figur 1.
+ Hewlet använde en lampa för att stabilisera kretsen samt få en finare sinusvåg,
+ med lampan fås nämligen en sinusvåg ut med en distortion på mindre på ca
+ 0,0025%.
+ Anledningen till att han valde att använda en helt vanlig glödlampa var
+ på eftersom att dess resistans är direkt proportionell mot värmen i glödtråden.
+ Även om lampan aldrig lyser hjälper den till att stabilisera kretsen.
+ Tar man bort lampan blir effekten att topparna på sinusvågen blir kapade
+ samt att vågen inte håller samma stabilitet.
+ I Figur 1 syns en krets utan användningen av en lampa.
+ I kretsen är Motstånden dimensionerade så att R2=R1.
+ Detta vilkor samt att C1=C2 måste alltid behållas för en fungerande krets.
+ Med hjälp av potentiometern kan frekvensen finjusteras.
+ 
+\end_layout
+
+\begin_layout Subsection
+Vippor
+\end_layout
+
+\begin_layout Standard
+Begreppet vippor används för att gruppera de kretsat som med hjälp av två
+ olika läge kan användas för att lagra digital data, samt utföra en enkel
+ operation beroende på det lagrade värdet.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+SR-vippa
+\end_layout
+
+\begin_layout Standard
+Sr-vippan är den enklaste av alla vippor.
+ Dess konstruktion tillåter den att lagra ett digitalt värde, 1 eller 0.
+ Dess funktioner är dock få.
+ Med två ingångar (se Figur 2, S och R) ch två utgångar (se Figur 2, Q1
+ och Q2) kan SR-vippan endast sätta ett värde eller återställas.
+ När en digital signal skickas på ingången S, samtidigt som R är en digital
+ 0:a, sparas en digital 1:a i SR-vippan.
+ Skulle sedan istället en digital 1:a skickas på S-ingången återställs 
+\begin_inset Quotes eld
+\end_inset
+
+minnet
+\begin_inset Quotes erd
+\end_inset
+
+ och återgår till sitt ursprungsläge.
+ Så länge som båda ingångarna tar emot digitala 0:or händer inget med vippan,
+ den är i ett slags vänteläge.
+ Det bör nämnas att utgången som det lagrade värdet kan hämtas på både är
+ Q1 och Q2.
+ Q2 är invers till Q1.
+\end_layout
+
+\begin_layout Subsubsection
+JK-vippa
+\end_layout
+
+\begin_layout Standard
+JK-vippan är den mest mångsidiga av de enklare vipporna, se figur 3.
+ Man kan på ett enkelt sätt beskriva den som en SR-vippa med fler funktioner.
+ Den kan precis som SR-vippan lagra ett värde.
+ Detta gör den då en digital 1:a skickas på J-ingången samtidigt som K-ingågen
+ är en nolla.
+ På samma sätt som SR-vippan kan JK-vippan återställas om en digital 1:a
+ skickas på K samtidigt som J är 0.
+ Tillskillnad från SR-vippan kan däremot JK-vippan skifta sitt lagrade värde.
+ Detta görs då både K och J är en digital 1:a.
+ På så sätt kan J- och K-ingången kopplas samman och fungera som en T-vippa.
+ En T-vippar skiftar värde varje gång en digital 1:a skickas på ingången.
+ JK-vippan används vanligen mycket flitigt vid byggen av binära räknare.
+\end_layout
+
+\begin_layout Subsection
+Slumpgenerator
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Bilaga 1/1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename bilder/wienbridge.pdf
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Kretschema som visar en wien-brygga.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Kretschema som visar en JK-vippa.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Kretschema som visar en SR-vippa.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Källor
+\end_layout
+
+\begin_layout Subsection
+Tryckta källor
+\end_layout
+
+\begin_layout Standard
+Bridge Circuits - Marying Gain and Balance, Wien Bridge-Based Oscillators.
+ Jim Williams, Juni 1990.
+\end_layout
+
+\begin_layout Subsection
+Internet
+\end_layout
+
+\begin_layout Standard
+www.hyperphysics.phy-astr.gsu.edu/hbase/electronic/flipflop.html
+\end_layout
+
+\end_body
+\end_document
