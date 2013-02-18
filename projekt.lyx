@@ -276,8 +276,12 @@ re som komparator, ett RC-filter samt en potentiometer för att ställa tiden.
  En transistor på utgången med en transientskyddsdiod kan även användas
  för att sedan koppla till ett relä.
  I slutet av kretsen kunde även en resistans och en diod kopplas till för
- att ladda ur RC-filtret som används, detta för att återställa kretsen efter
- att spänning bryts.
+ att ladda ur RC-filtret som används, detta för att återställa tidfördröjningen
+ efter att spänning bryts.
+ Denna upptäckt skedde dock för sent för att den krets som byggs skulle
+ hinna ändras, däremot har kretsen redan från början varit bygg för att
+ en slump- eller tidsfördröjningskrets skulle kunna kopplas på.
+ Därav kretsens utseende.
 \end_layout
 
 \begin_layout Standard
