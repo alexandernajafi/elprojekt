@@ -152,7 +152,6 @@ reference "fig:srlatch"
 \end_inset
 
 , Q1 och Q2) kan SR-vippan endast sätta ett värde eller återställas.
-
  När en digital signal skickas på ingången S, samtidigt som R är en digital
  0:a, sparas en digital 1:a i SR-vippan.
  Skulle sedan istället en digital 1:a skickas på S-ingången återställs 
@@ -190,7 +189,8 @@ reference "fig:jklatch"
  är en nolla.
  På samma sätt som SR-vippan kan JK-vippan återställas om en digital 1:a
  skickas på K samtidigt som J är 0.
- Tillskillnad från SR-vippan kan däremot JK-vippan skifta sitt lagrade värde.
+ Till skillnad från SR-vippan kan däremot JK-vippan skifta sitt lagrade
+ värde.
  Detta görs då både K och J är en digital 1:a.
  På så sätt kan J- och K-ingången kopplas samman och fungera som en T-vippa.
  En T-vippa skiftar värde varje gång en digital 1:a skickas på ingången.
@@ -240,14 +240,44 @@ Då påbörjades en sökning för att hitta en annan sorts slumpgenerator eller
 \begin_layout Standard
 Däremot hittades en artikel på internet om ett projekt som genomfördes 1960
  som tydligt visar hur man skulle kunna skapa en elektrisk slumpgenerator.
- Detta var den minsta krets, som både gav i från sig ett statistiskt sett
- slumpmässigt brus och innehöll minst komponenter som hittades.
+ Detta var den krets med minst komponenter, och som gav i från sig ett statistis
+kt sett slumpmässigt brus som hittades.
  Även denna krets slopades då den ansågs vara för komplicerad och för stor
  för att appliceras på våra kopplingsplattor, eftersom även denna krets
  hade behövt tillägg i form av en filterkrets för att få rätt frekvensomfång
  och rätt logiska funktion för distinkta pip i högtalaren vid slumpmässiga
  tillfällen.
  
+\end_layout
+
+\begin_layout Standard
+Det finns även andra elektroniska pseudo-slumpgeneratorer som inte ger ifrån
+ sig brus, utom som ger ifrån sig signaler i form av pulser.
+ Efter att viss efterforskning gjorts insåg man dock att dessa kretsar innehöll
+ än fler delar och var än svårare att förstå och om inte minst att räkna
+ på.
+ Dessutom är det en komplicerad konstruktion.
+ Ett exempel på en sådan slumpgenerator är Richard Leo Galbraiths patenterade
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Electrical pulse generator using pseudo-random pole distribution
+\begin_inset Quotes erd
+\end_inset
+
+ som ofta används som tändstift i interna förbränningsmotorer eftersom den
+ ger en såpass kraftfull puls.
+\end_layout
+
+\begin_layout Standard
+Det sista som diskuterades var en logisk klocka i form av en operationsförstärka
+re som komparator, ett RC-filter samt en potentiometer för att ställa tiden.
+ En transistor på utgången med en transientskyddsdiod kan även användas
+ för att sedan koppla till ett relä.
+ I slutet av kretsen kunde även en resistans och en diod kopplas till för
+ att ladda ur RC-filtret som används, detta för att återställa kretsen efter
+ att spänning bryts.
 \end_layout
 
 \begin_layout Standard
