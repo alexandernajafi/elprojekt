@@ -198,7 +198,15 @@ reference "fig:jklatch"
 \end_layout
 
 \begin_layout Subsection
-Slumpgenerator
+Slumpgenerator (DET FINNS ETT 
+\begin_inset Quotes eld
+\end_inset
+
+VI
+\begin_inset Quotes erd
+\end_inset
+
+ HÄR INNE GUSHMET, MAKE IT DISSAPEAR)
 \end_layout
 
 \begin_layout Standard
@@ -372,7 +380,36 @@ litet med kretsen.
  med en kondensator, som båda noggrant uppmättes för att få en eftertraktad
  längd på pipet.
  Utsignalen hämtades över kondensatorn och leddes tillbaka till reset ingången.
- 
+\end_layout
+
+\begin_layout Subsection
+Insignal
+\end_layout
+
+\begin_layout Standard
+Denna kretssdel var först tänkt att bestå av en källa som emitter osammanhängade
+ brus.
+ Detta brus skulle sedan filtreras med hjälp av någon slags Shmmitt trigger.
+ Efter att ha studerat komplexiteten på denna lösning valdes det att primärt
+ börja med en simplare lösning och sedan (om tiden tillät) konstruera ett
+ mer slumpmässigt alternativ.
+ Det bästämdes tidigt att problemet kunde lösas med hjälp oscillatorer.
+ Två stycken Wein bridge oscillatorer konstruerades så att man enkelt kunde
+ justera deras frekvenser med hjälp av varsin potentiometer.
+ Oscillatorernas frekvenser ställdes sedan in så att deras toppar möttes
+ med en bestämd tidsintervall.
+ Denna intervall är den tid det tar ifrån att ett pip har avslutats tills
+ dess att ett nytt pip ljuder.
+ Oscillatorernas utsignaler sammanfogades med hjälp av en adderare konstruerad
+ med hjälp av en OP-förstärkare.
+ Adderarens utsignal är kopplad som en av referenspänningarna på den efterföljan
+de komparatorn.
+ På komparatorns andra referensingång kopplades en potentiometer in.
+ Potentiometern gör det möjligt att finjustera en perfekt referensspänning
+ så att insignalskretsen skickar en fin puls när pipet ska låta.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
