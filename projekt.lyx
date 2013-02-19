@@ -614,6 +614,33 @@ Transistorn användes som en logisk strömbrytare, och bryter matningsströmmen
 \end_layout
 
 \begin_layout Subsection
+Självsvängning/Brus
+\end_layout
+
+\begin_layout Standard
+Varje gång kretsen startas börjar denna oförklarligt självsvänga.
+ Självsvängningen är ganska massiv och kan lätt uppfattas i högtalaren vilket
+ gör detta till ett ganska stort problem.
+ Självsvägningen lungnar dock ner efter något tiotal sekunder.
+ Den enda förklaringen som hittils kan förklara detta fenomen är att det
+ förtillfället används mycket långa kablar som korsar varandra vid åtskillada
+ ställen.
+ Vissa av dessa kablar leder en svängade signal som lätt kan få det att
+ uppkomma brus och störningar i andra närliggande kablar.
+ Ett annat felande som har upptäckts är att insignalen som egentligen var
+ tänk att ge en kort slumpmässig puls men som nu ger en periodisk och ganska
+ lång puls överskrider den tid som SR-Vippan uppehåller sin utsignal.
+ Eftersom insignalen fortfarnade ger en puls då SR-Vipppan slår om kommer
+ vippan börja shifta mellan ett påslaget och avsängt läge.
+ På grund av att kondensatorn är uppladdad efter föregående pip kommer detta
+ ske mycket snabbt och skapa ett mycket otrevligt brus ur högtalaren.
+ Detta kan lätt fixas genom att låta insignalen kopplas förbi SR-vippan
+ och direkt in i AND-grinden.
+ Detta skulle leda till ett längre pip men att SR-bruset försvinner.
+ Varför SR-vippan fortfarnde närvarar i kretsen disskuterar i stycke 3.1.
+\end_layout
+
+\begin_layout Subsection
 Strömtillförsel
 \end_layout
 
@@ -717,7 +744,6 @@ name "fig:jklatch"
 \begin_inset Float figure
 wide false
 sideways false
-
 status collapsed
 
 \begin_layout Plain Layout
