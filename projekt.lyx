@@ -389,6 +389,13 @@ t med resten av kretsen.
  med en kondensator, som båda noggrant uppmättes för att få en eftertraktad
  längd på pipet.
  Utsignalen hämtades över kondensatorn och leddes tillbaka till reset ingången.
+ Efter att ha testat den första fördröjningsdelprototypen märktes snart
+ att spännisngspotentialen som gick förlorad över resistansen var förstor
+ för att få återkopplingen att räknas som en logisk etta och återställa
+ vippan.
+ Men efter att ha ändrat förhållandet mellan kondensatorn och resistansen
+ (sänkt resistansen och ökat kapasitansen) blev spänningspotentialen på
+ återkopplingen tillräcklig för att ändra insignalen.
 \end_layout
 
 \begin_layout Subsection
@@ -416,6 +423,15 @@ de komparatorn.
  På komparatorns andra referensingång kopplades en potentiometer in.
  Potentiometern gör det möjligt att finjustera en perfekt referensspänning
  så att insignalskretsen skickar en fin puls när pipet ska låta.
+ 
+\end_layout
+
+\begin_layout Subsection
+Ljud
+\end_layout
+
+\begin_layout Standard
+Kretsdelen som skulle 
 \end_layout
 
 \begin_layout Standard
