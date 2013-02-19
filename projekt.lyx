@@ -198,21 +198,13 @@ reference "fig:jklatch"
 \end_layout
 
 \begin_layout Subsection
-Slumpgenerator (DET FINNS ETT 
-\begin_inset Quotes eld
-\end_inset
-
-VI
-\begin_inset Quotes erd
-\end_inset
-
- HÄR INNE GUSHMET, MAKE IT DISSAPEAR)
+Slumpgenerator 
 \end_layout
 
 \begin_layout Standard
 När projektet påbörjades var tanken att en elektronisk slumpgenerator skulle
- användas för att bestämma hur ofta högtalaren skulle pipa då kretsen stod
- i mörker.
+ användas för att bestämma hur ofta högtalaren skulle pipa då kretsen befann
+ sig i mörker.
 \end_layout
 
 \begin_layout Standard
@@ -232,7 +224,7 @@ Den första slumpgeneratorn som kom på tal var en brusfiltrerande krets.
 \begin_layout Standard
 Det visade sig dock ganska snabbt att det var mycket svårt att filtrera
  ut brus på det sätt det var tänkt, och att den absolut största delen av
- alla brusfiltrerande kretsar vi undersökt har som mål att filtrera bort
+ alla brusfiltrerande kretsar som undersökts har som mål att filtrera bort
  brus, och inte tvärt om.
  Detta gjorde det problematiskt att använda någon form av brus över huvud
  taget.
@@ -248,8 +240,8 @@ Då påbörjades en sökning för att hitta en annan sorts slumpgenerator eller
 \begin_layout Standard
 Däremot hittades en artikel på internet om ett projekt som genomfördes 1960
  som tydligt visar hur man skulle kunna skapa en elektrisk slumpgenerator.
- Detta var den krets med minst komponenter, och som gav i från sig ett statistis
-kt sett slumpmässigt brus som hittades.
+ Detta var den krets med minst komponenter som gav i från sig ett statistiskt
+ sett slumpmässigt brus som hittades.
  Även denna krets slopades då den ansågs vara för komplicerad och för stor
  för att appliceras på våra kopplingsplattor, eftersom även denna krets
  hade behövt tillägg i form av en filterkrets för att få rätt frekvensomfång
@@ -262,8 +254,7 @@ kt sett slumpmässigt brus som hittades.
 Det finns även andra elektroniska pseudo-slumpgeneratorer som inte ger ifrån
  sig brus, utom som ger ifrån sig signaler i form av pulser.
  Efter att viss efterforskning gjorts insåg man dock att dessa kretsar innehöll
- än fler delar och var än svårare att förstå och om inte minst att räkna
- på.
+ än fler delar och var än svårare att förstå och inte minst att räkna på.
  Dessutom är det en komplicerad konstruktion.
  Ett exempel på en sådan slumpgenerator är Richard Leo Galbraiths patenterade
  
@@ -282,12 +273,12 @@ Electrical pulse generator using pseudo-random pole distribution
 Det sista som diskuterades var en logisk klocka i form av en operationsförstärka
 re som komparator, ett RC-filter samt en potentiometer för att ställa tiden.
  En transistor på utgången med en transientskyddsdiod kan även användas
- för att sedan koppla till ett relä.
+ för att möjligöra påkoppling av ett relä.
  I slutet av kretsen kunde även en resistans och en diod kopplas till för
  att ladda ur RC-filtret som används, detta för att återställa tidfördröjningen
- efter att spänning bryts.
+ efter att spänningen bryts.
  Denna upptäckt skedde dock för sent för att den krets som byggts skulle
- hinna ändras, däremot har kretsen redan från början varit bygg för att
+ hinna ändras, däremot har kretsen redan från början varit byggd för att
  en slump- eller tidsfördröjningskrets skulle kunna kopplas på.
  Därav kretsens utseende.
 \end_layout
