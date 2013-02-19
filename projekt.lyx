@@ -433,7 +433,7 @@ Bilaga 1/1
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -497,15 +497,9 @@ name "fig:jklatch"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename bilder/srlatch.pdf
-	width 50page%
-
-\end_inset
-
 
 \end_layout
 
