@@ -387,17 +387,17 @@ Insignal
 \end_layout
 
 \begin_layout Standard
-Denna kretssdel var först tänkt att bestå av en källa som emitter osammanhängade
- brus.
+Denna kretssdel var först tänkt att bestå av en källa som emitterade osammanhäng
+ade brus.
  Detta brus skulle sedan filtreras med hjälp av någon slags Shmmitt trigger.
- Efter att ha studerat komplexiteten på denna lösning valdes det att primärt
+ Efter att ha studerat komplexiteten i denna lösning valdes det att primärt
  börja med en simplare lösning och sedan (om tiden tillät) konstruera ett
  mer slumpmässigt alternativ.
  Det bästämdes tidigt att problemet kunde lösas med hjälp oscillatorer.
- Två stycken Wein bridge oscillatorer konstruerades så att man enkelt kunde
+ Två stycken Wein bridge-oscillatorer konstruerades så att man enkelt kunde
  justera deras frekvenser med hjälp av varsin potentiometer.
  Oscillatorernas frekvenser ställdes sedan in så att deras toppar möttes
- med en bestämd tidsintervall.
+ med ett bestämt tidsintervall.
  Denna intervall är den tid det tar ifrån att ett pip har avslutats tills
  dess att ett nytt pip ljuder.
  Oscillatorernas utsignaler sammanfogades med hjälp av en adderare konstruerad
@@ -406,7 +406,8 @@ Denna kretssdel var först tänkt att bestå av en källa som emitter osammanhä
 de komparatorn.
  På komparatorns andra referensingång kopplades en potentiometer in.
  Potentiometern gör det möjligt att finjustera en perfekt referensspänning
- så att insignalskretsen skickar en fin puls när pipet ska låta.
+ så att kretsen som sköter insignalen skickar en fin puls när pipet ska
+ låta.
 \end_layout
 
 \begin_layout Standard
@@ -424,7 +425,7 @@ Bilaga 1/1
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -488,9 +489,15 @@ name "fig:jklatch"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename bilder/srlatch.pdf
+	width 50page%
+
+\end_inset
+
 
 \end_layout
 
