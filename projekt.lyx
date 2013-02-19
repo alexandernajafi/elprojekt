@@ -413,7 +413,6 @@ de komparatorn.
  På komparatorns andra referensingång kopplades en potentiometer in.
  Potentiometern gör det möjligt att finjustera en perfekt referensspänning
  så att insignalskretsen skickar en fin puls när pipet ska låta.
- 
 \end_layout
 
 \begin_layout Subsection
@@ -483,7 +482,6 @@ Högtalaren
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Subsection
@@ -505,6 +503,23 @@ För att generera digitala ettor som triggar igång ett pip använde vi oss
  För att inte OP-förstärkaren som summerade signalerna inte skulle bottna
  var de två enskilda sinussignalerna tvugna att spänningsdelas ner innan
  de summerades.
+ Detta genom att seriekoppla två resistanser mellan den genererade utsignalen
+ och jorden.
+ Signalen plockades sedan mellan resistanserna vilket gav en mycket lägre
+ amplitud.
+ Vilket i sin tur gjorde att summeraren inte bottnade.
+ Resistanserna valdes med lika storlek, vilket innebar att signalens amplitud
+ halverades.
+ Detta gjordes på båda utsignalerna från wien-bryggorna.
+\end_layout
+
+\begin_layout Standard
+I serie med den summerade utsignalen kopplades en diod.
+ På så sätt likriktades denna signal.
+ Anledningen till att den likriktades var för att inga problem skulle skapas
+ i den efterkommande komparatorn.
+ Om signalen vid vissa tidpunkter skulle vara negativ skulle resultatet
+ kunna bli att komparatorn gav felaktiga resultat.
 \end_layout
 
 \begin_layout Standard
@@ -544,13 +559,51 @@ För att högtalaren över huvud taget ska kunna låta måste en signal generera
  Med hjälp av en wien-brygga genereras en sinussignal med en frekvens på
  ungefär 1kHz.
  Med hjälp av potentiometern kan frekvensen finjusteras.
- Högtalaren tjuter endast då en digital etta är lagrad i SR-vippan.
+ Högtalaren tjuter endast då en digital nolla är lagrad i SR-vippan.
  För få denna funktion används en PMOS-transistor.
  Gate-ingången på transistorn är kopplad direkt till utgången på SR-vippan.
- Transistorn används som en brytare, och bryter matningsströmmen till OP-förstär
-karen som används i wien-bryggan.
+ Det bör nämnas att utsignalen till transistorn plockas från den inverterade
+ utgången.
+ Anledningen till detta var de komponenter som kopplades vidare efter utgången.
+ Under arbetets gång upptäcktes det att kondensatorerna störde andra andra
+ delar av kretsen.
+ Vid användning av den inverterade utgången fungerade det mycket stabilare.
+ Nackdelen blev dock att signalen logiskt sätt var inverterad.
+ Genom att använda en logisk NOT-grind inverterades signalen till en önskad
+ digital etta då högtalaren skulle tjuta (då en digital nolla var lagrad
+ i SR-vippan).
+\end_layout
+
+\begin_layout Standard
+Transistorn användes som en logisk strömbrytare, och bryter matningsströmmen
+ till OP-förstärkaren som används i wien-bryggan.
  När OP-förstärkaren inte matas med någon ström genereras ingen signal till
  högtalaren vilket gör att högtalaren inte piper.
+\end_layout
+
+\begin_layout Subsection
+Strömtillförsel
+\end_layout
+
+\begin_layout Standard
+För att syskonretaren ska kunna brukas på valfri plats är portabiliteten
+ av största vikt.
+ Att kunna drivas på endast batterier är därför en självklarhet.
+ Den syskonretare vi konstruerat behöver endast matas med ±6V.
+ Detta innebär att den i praktiken skulle kunna drivas med åtta stycken
+ helt vanliga AA batterier ´a 1,5V.
+ För att åstadkomma den negativa och positiva spänningen samt jorden skulle
+ dessa battterier seriekopplas med varandra.
+ Jorden skulle plockas mellan de två mellersta batterierna medan den positiva
+ och den negativa spänningen skulle plockas på de respektive yttre batterierna.
+ Se Figur 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:powermgn"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -635,16 +688,6 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename bilder/srlatch.pdf
-	width 50page%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -663,10 +706,45 @@ name "fig:srlatch"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
 \begin_layout Plain Layout
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Koppling av huvudsaklig strömkälla.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:powermgn"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
 \end_inset
 
 
