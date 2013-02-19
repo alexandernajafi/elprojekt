@@ -416,6 +416,25 @@ de komparatorn.
  
 \end_layout
 
+\begin_layout Subsection
+Ljud
+\end_layout
+
+\begin_layout Standard
+Det bestämdes tidigt att kretsen som skulle ge ifrån sig ljudet skulle styras
+ av vippans utsignal.
+ Själva ljudsignalen tänktes skapas i någon slags oscillator.
+ Första idén på oscillatortyp var en CMOS-oscillator denna idé skulle kunna
+ ha funkat felfritt med vår övriga krets men denna valdes ändå bort och
+ byttes ut mot en Wien-brygoscillator som skulle ge ett mycket renare ljud
+ och inte alls lika hackigt som det av en CMOS.
+ Oscillatorn konstruerades med en potentiometer så att dennas frekvens enkelt
+ kan ändras.
+ Oscillatorns utsignal kopplas direkt till en högtalare.
+ På oscillatorns OP-förstärkares matningsspänning kopplades en transistor
+ in som styrs av vippans utsignal.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
@@ -532,23 +551,6 @@ För att högtalaren över huvud taget ska kunna låta måste en signal generera
 karen som används i wien-bryggan.
  När OP-förstärkaren inte matas med någon ström genereras ingen signal till
  högtalaren vilket gör att högtalaren inte piper.
-\begin_layout Subsection
-Ljud
-\end_layout
-
-\begin_layout Standard
-Det bestämdes tidigt att kretsen som skulle ge ifrån sig ljudet skulle styras
- av vippans utsignal.
- Själva ljudsignalen tänktes skapas i någon slags oscillator.
- Första idén på oscillatortyp var en CMOS-oscillator denna idé skulle kunna
- ha funkat felfritt med vår övriga krets men denna valdes ändå bort och
- byttes ut mot en Wien-brygoscillator som skulle ge ett mycket renare ljud
- och inte alls lika hackigt som det av en CMOS.
- Oscillatorn konstruerades med en potentiometer så att dennas frekvens enkelt
- kan ändras.
- Oscillatorns utsignal kopplas direkt till en högtalare.
- På oscillatorns OP-förstärkares matningsspänning kopplades en transistor
- in som styrs av vippans utsignal.
 \end_layout
 
 \begin_layout Standard
@@ -631,8 +633,6 @@ name "fig:jklatch"
 wide false
 sideways false
 status collapsed
-<<<<<<< HEAD
-=======
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -643,7 +643,6 @@ status collapsed
 
 
 \end_layout
->>>>>>> ca6647ae6ebda4a0b7953850b37952517b77098d
 
 \begin_layout Plain Layout
 \begin_inset Caption
