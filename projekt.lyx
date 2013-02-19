@@ -334,14 +334,25 @@ Dagen efter mötet då den första skissen presenterades konstaterades att
  En vanlig fototransistor var dock fullt tillräcklig för uppgiften.
  Efter ett möte med handledare hade en fototransistor förvärvats, vilken
  en kretsdel började byggas runt.
- Först testades transistorn genom en ström-spänningsförstärkare, med osäkert
+ Först testades transistorn genom en ström-spänningsförstärkare, där hela
+ kretsen drevs med ett 9 V batteri spänningsdelat till 4,5 V, med osäkert
  resultat.
  Även utan signal in i förstärkaren blev utsignalen lika stor som Vcc.
  Att detta första försök till ström-spänningsförstärkning blev felaktigt,
- ledde till att ############ Efter lite research hos andra grupper valdes
- istället en annan fototransistor.
- Denna fototransistor (5 mm SI-NPN) hade en centralvåglängd på 940 nm vilken
- fungerade betydligt då den faktiskt reagerade på ljusskillnader.
+ ledde till att det tog lång tid innan det konstaterades att fototransistorn
+ inte fungerade.
+ Det konstaterades efter några dagar utan framsteg att batteriet ledde till
+ märkliga spänningsdelningar över kopplingsplattan ‒ ett problem som konstaterad
+es även av andra grupper.
+ Efter lite research hos andra grupper valdes istället en annan fototransistor.
+ När denna testades i en krets där transistorn kopplades till ingången på
+ en ström-spänningsförstärkare, denna gång drivet med spänningskub, kunde
+ det mätas upp en skillnad i utspänning mellan belyst och skuggbelagd fototransi
+stor.
+ För att omvandla denna spänningsskillnad till logiska signaler, kopplades
+ en komparator efter förstärkaren.
+ HÄR MÅSTE VI FORTSÄTTA MED ATT FÖRKLARA ATT OP-FÖRSTÄRKARNA VAR SÄMST OCH
+ ATT DET TOG EN VECKA ATT FATTA DET...
 \end_layout
 
 \begin_layout Subsection
@@ -350,15 +361,14 @@ Vippa
 
 \begin_layout Standard
 Kretsen som skulle göra att utsignalen höll sig stabil under den tiden då
- ljudet skulle låta, oberoende av hur lång den “slumpmässiga” insignalen
+ ljudet skulle låta, oberoende av hur lång den planerade slumpmässiga insignalen
  var, tänktes ursprungligen åstadkommas med hjälp av någon slags bistabil
  krets eller vippa.
  Idén om vippan kretsade omkring att återkoppla dess utsignal till dess
  insignal efter en viss fördröjning vilket skulle leda till att den byter
  läge.
  Den första prototypen tänktes byggas med en JK-Vippa men denna lösning
- sågs bristfällig och lades snart åt sidan efter en diskussion med vår handledar
-e Elvedin.
+ sågs bristfällig och lades snart åt sidan efter en diskussion med handledare.
  Istället valdes en SR-Vippa.
  Denna bistabila krets syntes vara lösningen på våra problem ty den var
  både simpel och pålitlig.
@@ -368,15 +378,14 @@ dar.
  snart klart att detta berodde på att ingångarna lämnades ojordade när tester
  pågick av motsatt ingång, detta ledde till helt felaktiga mätresultat och
  en ickefungerande krets.
- När detta pinsamma misstag upptäkts kunde kretsen snabbt färdigställas.
- Nästa utmaning bestod av att på något sätt tillverka en fördröjning av
- signalen som återkopplades till reset ingången som får kretsen att sluta
- pipa.
+ När detta misstag upptäkts kunde denna del av kretsen snabbt färdigställas.
+ Nästa utmaning bestod av att på något sätt uppnå en fördröjning av signalen
+ som återkopplades till reset ingången som får kretsen att sluta pipa.
  Den första idén om lösning på problemet vara att seriekoppla en kondensator
  och få denna att laddas upp för att sedan skicka vidare en inverterad signal,
- men denna idé kasserades efter ett fåtal tester som frambringade dess inkompabi
-litet med kretsen.
- En alternativ tackling till problemet kom att bli att seriekoppla en resistans
+ men denna idé kasserades efter ett fåtal tester som påvisade dess inkompabilite
+t med resten av kretsen.
+ En alternativ lösning till problemet kom att bli att seriekoppla en resistans
  med en kondensator, som båda noggrant uppmättes för att få en eftertraktad
  längd på pipet.
  Utsignalen hämtades över kondensatorn och leddes tillbaka till reset ingången.
