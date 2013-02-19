@@ -114,7 +114,7 @@ reference "fig:wienbridge"
  I kretsen är Motstånden dimensionerade så att R2=R1.
  Detta vilkor samt att C1=C2 måste alltid behållas för en fungerande krets.
  Med hjälp av potentiometern kan frekvensen finjusteras.
- Frekvensen påverkas även väldigt mycket av storlekarna på R1,R2,C1 och
+ Frekvensen påverkas även väldigt mycket av storlekarna på R1, R2, C1 och
  C2.
 \end_layout
 
@@ -126,7 +126,6 @@ Vippor
 Begreppet vippor används för att gruppera de kretsar som med hjälp av två
  olika lägen kan användas för att lagra digital data, samt utföra en enkel
  operation beroende på det lagrade värdet.
- 
 \end_layout
 
 \begin_layout Subsubsection
@@ -396,14 +395,14 @@ Insignal
 \end_layout
 
 \begin_layout Standard
-Denna kretssdel var först tänkt att bestå av en källa som emitter osammanhängade
- brus.
+Denna kretssdel var först tänkt att bestå av en källa som emitterar osammanhänga
+de brus.
  Detta brus skulle sedan filtreras med hjälp av någon slags Shmmitt trigger.
  Efter att ha studerat komplexiteten på denna lösning valdes det att primärt
  börja med en simplare lösning och sedan (om tiden tillät) konstruera ett
  mer slumpmässigt alternativ.
  Det bästämdes tidigt att problemet kunde lösas med hjälp oscillatorer.
- Två stycken Wein bridge oscillatorer konstruerades så att man enkelt kunde
+ Två stycken Wein-bryggsoscillatorer konstruerades så att man enkelt kunde
  justera deras frekvenser med hjälp av varsin potentiometer.
  Oscillatorernas frekvenser ställdes sedan in så att deras toppar möttes
  med en bestämd tidsintervall.
@@ -416,6 +415,125 @@ de komparatorn.
  På komparatorns andra referensingång kopplades en potentiometer in.
  Potentiometern gör det möjligt att finjustera en perfekt referensspänning
  så att insignalskretsen skickar en fin puls när pipet ska låta.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diskussion
+\end_layout
+
+\begin_layout Subsection
+SR-Vippa
+\end_layout
+
+\begin_layout Standard
+Vid en första anblick av syskonretarens funktion kan man tycka att en SR-vippa
+ känns lite överflödig.
+ I den slutgiltiga prototyp som skapades är denna även lite överflödig.
+ SR-vippans funktion i kretsen var att omvandla en kort puls till ett längre
+ pip.
+ Denna korta puls är avsedd att komma från en kort digital etta.
+ Då en digital etta skickades in på insignalen skulle ett längre pip, med
+ en bestämt längd höras i högtalaren.
+ Denna etta var avsedd att komma från en slumpgenerator, men då denna idé
+ förkastades användes istället en annan princip som beskrivs nedan under
+ rubriken Insignal.
+\end_layout
+
+\begin_layout Standard
+När en etta skickas på ?S?-ingången på SR-vippan lagras en digital etta
+ i SR-vippan.
+ En återkoppling från utgången till R-ingången gör dock att SR-vippan återställe
+r sig själv.
+ I återkopplingen laddas en kondoensator upp genom en resistans, vilket
+ tar en viss tid.
+ När kondensatorn laddats upp tillräckligt mycket återställs SR-vippan till
+ sitt ursprungsläge, vilket var en digital nolla.
+ Under tiden som SR-vippan hade en digital etta som lagrat värde pep högtalaren,
+ mer om hur det fungerar nedan under 
+\begin_inset Quotes eld
+\end_inset
+
+Högtalaren
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Insignal
+\end_layout
+
+\begin_layout Standard
+För att generera digitala ettor som triggar igång ett pip använde vi oss
+ av två stycken wien-bryggor.
+ Oscillatorerna var nästan identiska, skillnaden var kapacitanserna som
+ användes.
+ Med en skillnad på endast 1pF genererades två signaler med en mycket liten
+ frekvenskillnad.
+ Dessa två signaler summerades med hjälp av en adderare.
+ Effekten av att summera två signaler med mycket liten frekvenskillnad blev
+ att den summerade signalen nådde sitt toppvärde med en mycket lägre frekvens.
+ Denna låga frekvens skulle inte vara möjlig att nå med hjälp av endast
+ en oscillator.
+ För att inte OP-förstärkaren som summerade signalerna inte skulle bottna
+ var de två enskilda sinussignalerna tvugna att spänningsdelas ner innan
+ de summerades.
+\end_layout
+
+\begin_layout Standard
+Den summerade signalen dög inte som insignal i SR-vippan då en impuls med
+ en digital etta behövdes.
+ För att uppnå detta komparerades den summerade signalen mot en DC-nivå.
+ Denna nivå valdes så att komparatorn gav en positiv utspänning då den summerade
+ signalen var större än DC-nivån.
+ Resultatet blev precis den fyrkantsvåg som söktes för insignal i SR-vippan.
+\end_layout
+
+\begin_layout Standard
+Som tidigare nämnts kan SR-vippan anses vara överflödig.
+ SR-vippans funktion var att omvandla en kort puls till en längre, med bestämd
+ tid.
+ Egentligen skulle signalen från komparatorn som komparerar den summerade
+ signalen, kunna användas som denna långa puls.
+ Detta genom att endast sänka DC-nivån i komparatorn.
+ Eftersom den summerade signalen är av sinustyp skulle en sänkt DC-nivå
+ göra att en längre puls matats ut från komparatorn, vilket skulle ge samma
+ resultat som SR-vippan ger.
+ Användningen av SR-vippan är dock befogad.
+ Vid en ytterligare utveckling av kretsen, då en slumpmässig puls generator
+ används, skulle SR-vippan vara mycket användbar.
+ En slumpgenerator som genererade digitala ettor vid slumpmässiga tider
+ skulle ge ett längre pip, oavsett hur lång denna puls var.
+ SR-vippan ses som en förberedelse för framtida utveckling av syskonretaren.
+ 
+\end_layout
+
+\begin_layout Subsection
+Högtalaren
+\end_layout
+
+\begin_layout Standard
+För att högtalaren över huvud taget ska kunna låta måste en signal genereras.
+ Med hjälp av en wien-brygga genereras en sinussignal med en frekvens på
+ ungefär 1kHz.
+ Med hjälp av potentiometern kan frekvensen finjusteras.
+ Högtalaren tjuter endast då en digital etta är lagrad i SR-vippan.
+ För få denna funktion används en PMOS-transistor.
+ Gate-ingången på transistorn är kopplad direkt till utgången på SR-vippan.
+ Transistorn används som en brytare, och bryter matningsströmmen till OP-förstär
+karen som används i wien-bryggan.
+ När OP-förstärkaren inte matas med någon ström genereras ingen signal till
+ högtalaren vilket gör att högtalaren inte piper.
 \end_layout
 
 \begin_layout Standard
@@ -433,7 +551,7 @@ Bilaga 1/1
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -470,7 +588,7 @@ name "fig:wienbridge"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -497,11 +615,7 @@ name "fig:jklatch"
 \begin_inset Float figure
 wide false
 sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
