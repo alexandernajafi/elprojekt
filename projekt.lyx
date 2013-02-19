@@ -395,7 +395,7 @@ Insignal
 \begin_layout Standard
 Denna kretssdel var först tänkt att bestå av en källa som emitterar osammanhänga
 de brus.
- Detta brus skulle sedan filtreras med hjälp av någon slags Shmmitt trigger.
+ Detta brus skulle sedan filtreras med hjälp av någon slags Shmitt trigger.
  Efter att ha studerat komplexiteten i denna lösning valdes det att primärt
  börja med en simplare lösning och sedan (om tiden tillät) konstruera ett
  mer slumpmässigt alternativ.
@@ -432,6 +432,38 @@ Det bestämdes tidigt att kretsen som skulle ge ifrån sig ljudet skulle styras
  Oscillatorns utsignal kopplas direkt till en högtalare.
  På oscillatorns OP-förstärkares matningsspänning kopplades en transistor
  in som styrs av vippans utsignal.
+\end_layout
+
+\begin_layout Subsection
+Sammankoppling
+\end_layout
+
+\begin_layout Standard
+När alla enskilda element var färdigbyggda återstod enbart att sammankoppla
+ alla dessa kretsar.
+ Detta gjordes enklast genom att tänka hur kretsen slutligen skulle fungera.
+ När det är mörkt i rummet och SR-Vippan ger utsignal ska transistorn som
+ matar OP-förstärkaren i ljudoscillatorn öppna source/drain-kanalen så att
+ högtalarsignalen börjar svänga.
+ Detta löstes genom att koppla insignalen till SR-vippan så att denna skickar
+ en stabil utsignal när pipet ska ljuda.
+ SR-Vippans utsignal kopplas till en av ingångarna på en AND-grind (inverterad
+ NAND-grind).
+ På den andra ingången till AND-grinden kopplas utgången från ljuskretsen.
+ Detta betyder alltså att när båda dessa ger en logis etta kommer AND-grindens
+ utsignal också ge en logisk etta.
+ Spänningen på denna logiska etta ligger på runt 6V som räcker gott för
+ att 
+\begin_inset Quotes eld
+\end_inset
+
+öppna
+\begin_inset Quotes erd
+\end_inset
+
+ transistorn som håller ljudoscillatorn stilla.
+ Denna koppling ger det sökta resultat, se de olika delarnas funktioner
+ under disskussions delen.
 \end_layout
 
 \begin_layout Standard
@@ -559,8 +591,8 @@ För att högtalaren över huvud taget ska kunna låta måste en signal generera
  Med hjälp av en wien-brygga genereras en sinussignal med en frekvens på
  ungefär 1kHz.
  Med hjälp av potentiometern kan frekvensen finjusteras.
- Högtalaren tjuter endast då en digital nolla är lagrad i SR-vippan.
- För få denna funktion används en PMOS-transistor.
+ Högtalaren tjuter endast då en digital etta är lagrad i SR-vippan.
+ För få denna funktion används en NMOS-transistor.
  Gate-ingången på transistorn är kopplad direkt till utgången på SR-vippan.
  Det bör nämnas att utsignalen till transistorn plockas från den inverterade
  utgången.
@@ -685,6 +717,7 @@ name "fig:jklatch"
 \begin_inset Float figure
 wide false
 sideways false
+
 status collapsed
 
 \begin_layout Plain Layout
