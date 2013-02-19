@@ -197,21 +197,13 @@ reference "fig:jklatch"
 \end_layout
 
 \begin_layout Subsection
-Slumpgenerator (DET FINNS ETT 
-\begin_inset Quotes eld
-\end_inset
-
-VI
-\begin_inset Quotes erd
-\end_inset
-
- HÄR INNE GUSHMET, MAKE IT DISSAPEAR)
+Slumpgenerator 
 \end_layout
 
 \begin_layout Standard
 När projektet påbörjades var tanken att en elektronisk slumpgenerator skulle
- användas för att bestämma hur ofta högtalaren skulle pipa då kretsen stod
- i mörker.
+ användas för att bestämma hur ofta högtalaren skulle pipa då kretsen befann
+ sig i mörker.
 \end_layout
 
 \begin_layout Standard
@@ -231,7 +223,7 @@ Den första slumpgeneratorn som kom på tal var en brusfiltrerande krets.
 \begin_layout Standard
 Det visade sig dock ganska snabbt att det var mycket svårt att filtrera
  ut brus på det sätt det var tänkt, och att den absolut största delen av
- alla brusfiltrerande kretsar vi undersökt har som mål att filtrera bort
+ alla brusfiltrerande kretsar som undersökts har som mål att filtrera bort
  brus, och inte tvärt om.
  Detta gjorde det problematiskt att använda någon form av brus över huvud
  taget.
@@ -247,8 +239,8 @@ Då påbörjades en sökning för att hitta en annan sorts slumpgenerator eller
 \begin_layout Standard
 Däremot hittades en artikel på internet om ett projekt som genomfördes 1960
  som tydligt visar hur man skulle kunna skapa en elektrisk slumpgenerator.
- Detta var den krets med minst komponenter, och som gav i från sig ett statistis
-kt sett slumpmässigt brus som hittades.
+ Detta var den krets med minst komponenter som gav i från sig ett statistiskt
+ sett slumpmässigt brus som hittades.
  Även denna krets slopades då den ansågs vara för komplicerad och för stor
  för att appliceras på våra kopplingsplattor, eftersom även denna krets
  hade behövt tillägg i form av en filterkrets för att få rätt frekvensomfång
@@ -261,8 +253,7 @@ kt sett slumpmässigt brus som hittades.
 Det finns även andra elektroniska pseudo-slumpgeneratorer som inte ger ifrån
  sig brus, utom som ger ifrån sig signaler i form av pulser.
  Efter att viss efterforskning gjorts insåg man dock att dessa kretsar innehöll
- än fler delar och var än svårare att förstå och om inte minst att räkna
- på.
+ än fler delar och var än svårare att förstå och inte minst att räkna på.
  Dessutom är det en komplicerad konstruktion.
  Ett exempel på en sådan slumpgenerator är Richard Leo Galbraiths patenterade
  
@@ -281,12 +272,12 @@ Electrical pulse generator using pseudo-random pole distribution
 Det sista som diskuterades var en logisk klocka i form av en operationsförstärka
 re som komparator, ett RC-filter samt en potentiometer för att ställa tiden.
  En transistor på utgången med en transientskyddsdiod kan även användas
- för att sedan koppla till ett relä.
+ för att möjligöra påkoppling av ett relä.
  I slutet av kretsen kunde även en resistans och en diod kopplas till för
  att ladda ur RC-filtret som används, detta för att återställa tidfördröjningen
- efter att spänning bryts.
+ efter att spänningen bryts.
  Denna upptäckt skedde dock för sent för att den krets som byggts skulle
- hinna ändras, däremot har kretsen redan från början varit bygg för att
+ hinna ändras, däremot har kretsen redan från början varit byggd för att
  en slump- eller tidsfördröjningskrets skulle kunna kopplas på.
  Därav kretsens utseende.
 \end_layout
@@ -388,6 +379,13 @@ t med resten av kretsen.
  med en kondensator, som båda noggrant uppmättes för att få en eftertraktad
  längd på pipet.
  Utsignalen hämtades över kondensatorn och leddes tillbaka till reset ingången.
+ Efter att ha testat den första fördröjningsdelprototypen märktes snart
+ att spännisngspotentialen som gick förlorad över resistansen var förstor
+ för att få återkopplingen att räknas som en logisk etta och återställa
+ vippan.
+ Men efter att ha ändrat förhållandet mellan kondensatorn och resistansen
+ (sänkt resistansen och ökat kapasitansen) blev spänningspotentialen på
+ återkopplingen tillräcklig för att ändra insignalen.
 \end_layout
 
 \begin_layout Subsection
@@ -398,14 +396,14 @@ Insignal
 Denna kretssdel var först tänkt att bestå av en källa som emitterar osammanhänga
 de brus.
  Detta brus skulle sedan filtreras med hjälp av någon slags Shmmitt trigger.
- Efter att ha studerat komplexiteten på denna lösning valdes det att primärt
+ Efter att ha studerat komplexiteten i denna lösning valdes det att primärt
  börja med en simplare lösning och sedan (om tiden tillät) konstruera ett
  mer slumpmässigt alternativ.
  Det bästämdes tidigt att problemet kunde lösas med hjälp oscillatorer.
  Två stycken Wein-bryggsoscillatorer konstruerades så att man enkelt kunde
  justera deras frekvenser med hjälp av varsin potentiometer.
  Oscillatorernas frekvenser ställdes sedan in så att deras toppar möttes
- med en bestämd tidsintervall.
+ med ett bestämt tidsintervall.
  Denna intervall är den tid det tar ifrån att ett pip har avslutats tills
  dess att ett nytt pip ljuder.
  Oscillatorernas utsignaler sammanfogades med hjälp av en adderare konstruerad
@@ -534,6 +532,23 @@ För att högtalaren över huvud taget ska kunna låta måste en signal generera
 karen som används i wien-bryggan.
  När OP-förstärkaren inte matas med någon ström genereras ingen signal till
  högtalaren vilket gör att högtalaren inte piper.
+\begin_layout Subsection
+Ljud
+\end_layout
+
+\begin_layout Standard
+Det bestämdes tidigt att kretsen som skulle ge ifrån sig ljudet skulle styras
+ av vippans utsignal.
+ Själva ljudsignalen tänktes skapas i någon slags oscillator.
+ Första idén på oscillatortyp var en CMOS-oscillator denna idé skulle kunna
+ ha funkat felfritt med vår övriga krets men denna valdes ändå bort och
+ byttes ut mot en Wien-brygoscillator som skulle ge ett mycket renare ljud
+ och inte alls lika hackigt som det av en CMOS.
+ Oscillatorn konstruerades med en potentiometer så att dennas frekvens enkelt
+ kan ändras.
+ Oscillatorns utsignal kopplas direkt till en högtalare.
+ På oscillatorns OP-förstärkares matningsspänning kopplades en transistor
+ in som styrs av vippans utsignal.
 \end_layout
 
 \begin_layout Standard
@@ -616,6 +631,19 @@ name "fig:jklatch"
 wide false
 sideways false
 status collapsed
+<<<<<<< HEAD
+=======
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename bilder/srlatch.pdf
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+>>>>>>> ca6647ae6ebda4a0b7953850b37952517b77098d
 
 \begin_layout Plain Layout
 \begin_inset Caption
