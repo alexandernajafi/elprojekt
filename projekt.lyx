@@ -575,11 +575,16 @@ Ljuskänslig givare
 \end_layout
 
 \begin_layout Standard
- Detta för att minimera energikonsumtionen då kretsen inte befinner sig
- i mörker.
- Det bästa valet av fototransistor verkade vara en skymningssensor, då den
- skulle skilja på det ljus rummet innehar dagtid och nattetid.
- En vanlig fototransistor var dock fullt tillräcklig för uppgiften.
+Denna del av kretsen visade sig tydligt vara den mest problematiska, med
+ många komponenter som fungerade dåligt och som inte kunde testas individuellt,
+ vilket gjorde det svårt att avgöra vilken komponent det var som inte fungerade.
+\end_layout
+
+\begin_layout Standard
+Det bestämdes tidigt att den ljuskänsliga delen av kretsen skulle flyttas
+ till kretsens början.
+ Detta gjordes för att minimera energikonsumtionen då kretsen inte befinner
+ sig i mörker.
 \end_layout
 
 \begin_layout Subsection
