@@ -312,6 +312,10 @@ Det första som gjordes var att dela upp kretsen i mindre delar så att dessa
 Ljuskänslig givare
 \end_layout
 
+\begin_layout Subsubsection
+Omplanering av ljuskänslig delkrets
+\end_layout
+
 \begin_layout Standard
 Dagen efter mötet då den första skissen presenterades konstaterades att
  den ljuskänsliga delen skulle placeras tidigare i kretsen, där den skulle
@@ -334,14 +338,57 @@ Dagen efter mötet då den första skissen presenterades konstaterades att
  Det konstaterades efter några dagar utan framsteg att batteriet ledde till
  märkliga spänningsdelningar över kopplingsplattan ‒ ett problem som konstaterad
 es även av andra grupper.
- Efter lite research hos andra grupper valdes istället en annan fototransistor.
+\end_layout
+
+\begin_layout Subsubsection
+Byte av fototransistor
+\end_layout
+
+\begin_layout Standard
+Efter lite research hos andra grupper valdes istället en annan fototransistor.
  När denna testades i en krets där transistorn kopplades till ingången på
  en ström-spänningsförstärkare, denna gång drivet med spänningskub, kunde
  det mätas upp en skillnad i utspänning mellan belyst och skuggbelagd fototransi
 stor.
  För att omvandla denna spänningsskillnad till logiska signaler, kopplades
  en komparator efter förstärkaren.
- HÄR MÅSTE VI FORTSÄTTA MED ATT FÖRKLARA ATT OP-FÖRSTÄRKARNA VAR SÄMST OCH
+ Den gav dock inte det väntade resultatet.
+ Beräkningen av resistansen för jämförelsespänningen gjordes om flera gånger.
+ Det diskuterades också om huruvida Vcc- kunde kopplas till jord, eller
+ om det behövdes en negativ spänning till.
+ Efter försök med båda dessa matningsalternativ, som båda resulterade i
+ samma fel, byttes OP-förstärkaren ut.
+ Den nya OP-förstärkaren ledde till samma problem, vilket ledde till slutsaten
+ att komparatorn hade sammankopplats felaktigt.
+ Efter en stunds felsökning och omkoppling tycktes kretsen fungera som planerat.
+ Den var dock väldigt opålitlig, med en funktionalitet som höll i sig cirka
+ tio minuter, innan det behövdes ny felsökning och omkoppling i en halvtimme.
+ Under de tester som gjordes då kretsen var funktionell framkom dock att
+ utspänningen från komparatorn blev cirka 0,8 V, istället för de beräknade
+ 0 ,då fototransistorn befann sig i mörker.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Byte av samtliga OP-förstärkare
+\end_layout
+
+\begin_layout Standard
+Många timmars felsökning senare byttes båda OP-förstärkarna ut mot en OP
+ med 4 
+\begin_inset Quotes eld
+\end_inset
+
+förstärkningsdelar?
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Detta gav återigen
+\end_layout
+
+\begin_layout Standard
+HÄR MÅSTE VI FORTSÄTTA MED ATT FÖRKLARA ATT OP-FÖRSTÄRKARNA VAR SÄMST OCH
  ATT DET TOG EN VECKA ATT FATTA DET...
 \end_layout
 
@@ -650,7 +697,7 @@ För att syskonretaren ska kunna brukas på valfri plats är portabiliteten
  Att kunna drivas på endast batterier är därför en självklarhet.
  Den syskonretare vi konstruerat behöver endast matas med ±6V.
  Detta innebär att den i praktiken skulle kunna drivas med åtta stycken
- helt vanliga AA batterier ´a 1,5V.
+ helt vanliga AA-batterier med spänning 1,5V.
  För att åstadkomma den negativa och positiva spänningen samt jorden skulle
  dessa battterier seriekopplas med varandra.
  Jorden skulle plockas mellan de två mellersta batterierna medan den positiva
