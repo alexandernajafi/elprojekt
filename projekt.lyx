@@ -74,6 +74,22 @@ Syskonretaren
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Teori
 \end_layout
@@ -124,8 +140,8 @@ Vippor
 
 \begin_layout Standard
 Begreppet vippor används för att gruppera de kretsar som med hjälp av två
- olika lägen kan användas för att lagra digital data, samt utföra en enkel
- operation beroende på det lagrade värdet.
+ olika lägen kan användas för att lagra digital data, samt utföra en eller
+ flera enkla operationer beroende på det lagrade värdet.
 \end_layout
 
 \begin_layout Subsubsection
@@ -134,7 +150,8 @@ SR-vippa
 
 \begin_layout Standard
 Sr-vippan är den enklaste av alla vippor.
- Dess konstruktion tillåter den att lagra ett digitalt värde, 1 eller 0.
+ Dess konstruktion tillåter den att lagra ett digitalt värde, ett eller
+ noll.
  Dess funktioner är dock få.
  Med två ingångar (se Figur 
 \begin_inset CommandInset ref
@@ -152,8 +169,9 @@ reference "fig:srlatch"
 
 , Q1 och Q2) kan SR-vippan endast sätta ett värde eller återställas.
  När en digital signal skickas på ingången S, samtidigt som R är en digital
- 0:a, sparas en digital 1:a i SR-vippan.
- Skulle sedan istället en digital 1:a skickas på S-ingången återställs 
+ nolla, sparas en digital etta i SR-vippan.
+ Skulle sedan istället en digital etta skickas på S-ingången återställs
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -162,8 +180,8 @@ minnet
 \end_inset
 
  och återgår till sitt ursprungsläge.
- Så länge som båda ingångarna tar emot digitala 0:or händer inget med vippan,
- den är i ett slags vänteläge.
+ Så länge som båda ingångarna tar emot digitala nollor händer inget med
+ vippan, den är i ett vänteläge.
  Det bör nämnas att utgången som det lagrade värdet kan hämtas på både är
  Q1 och Q2.
  Q2 är invers till Q1.
@@ -184,16 +202,35 @@ reference "fig:jklatch"
 .
  Man kan på ett enkelt sätt beskriva den som en SR-vippa med fler funktioner.
  Den kan precis som SR-vippan lagra ett värde.
- Detta gör den då en digital 1:a skickas på J-ingången samtidigt som K-ingågen
+ Detta gör den då en digital etta skickas på J-ingången samtidigt som K-ingågen
  är en nolla.
- På samma sätt som SR-vippan kan JK-vippan återställas om en digital 1:a
- skickas på K samtidigt som J är 0.
+ På samma sätt som SR-vippan kan JK-vippan återställas om en digital etta
+ skickas på K samtidigt som J är noll.
  Till skillnad från SR-vippan kan däremot JK-vippan skifta sitt lagrade
  värde.
- Detta görs då både K och J är en digital 1:a.
+ Detta görs då både K och J är en digital etta.
  På så sätt kan J- och K-ingången kopplas samman och fungera som en T-vippa.
- En T-vippa skiftar värde varje gång en digital 1:a skickas på ingången.
+ En T-vippa skiftar värde varje gång en digital etta skickas på ingången.
  JK-vippan används vanligen mycket flitigt vid byggen av binära räknare.
+\end_layout
+
+\begin_layout Subsection
+Fototransistor
+\end_layout
+
+\begin_layout Standard
+En fototransistor är i huvudsak uppbyggd som en vanlig transistor med skillnaden
+ att ljus kan falla in över kollektor-bas-övergången som fungerar som en
+ bakspänd diod.
+ Backströmmen är beroende av mängden ljus som faller in, ju mer ljus som
+ faller in desto större blir backströmmen, samt ljusets våglängd.
+ Unikt för fototransistorn är att den genererar en ström och en spänning,
+ där strömmen är mycket högre än vad andra fotokomponenter klarar av.
+ En nackdel med fototransistorer är att de jämfört med likartade komponenter
+ är långsam.
+ Detta beror på att kollektor-bas-övergången har fått stort utrymme för
+ att kunna fånga upp så mycket ljus som möjligt.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -728,7 +765,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename bilder/wienbridge.pdf
+	filename /home/alexander/repos/skolarbete/elprojekt/bilder/wienbridge.pdf
 	width 50page%
 
 \end_inset
@@ -764,6 +801,16 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/alexander/repos/skolarbete/elprojekt/bilder/jklatch.png
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -789,6 +836,16 @@ name "fig:jklatch"
 wide false
 sideways false
 status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/alexander/repos/skolarbete/elprojekt/bilder/sr-latch.png
+	width 50page%
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -818,6 +875,16 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/alexander/repos/skolarbete/elprojekt/bilder/powermgn.png
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -825,6 +892,56 @@ Koppling av huvudsaklig strömkälla.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:powermgn"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename bilder/projekt.png
+	width 65pheight%
+	scaleBeforeRotation
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Kretschema över hela kretsen.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:fullcircuit"
 
 \end_inset
 
