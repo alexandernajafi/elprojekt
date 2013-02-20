@@ -337,7 +337,8 @@ Det första som gjordes var att dela upp kretsen i mindre delar så att dessa
  en slumpmässig insignal (Slumpkrets), en ljuskänslig del (Ljuskänslig givare),
  en del som begränsade ljudets längd (Vippa) samt en del som producerade
  och emmiterade ett högfrekvent ljud (Ljud).
- Den första skissen kan hittas i bilaga ().
+ Den första skissen kan hittas i ##############################################
+ bilaga ().
  Det bestämdes tidigt att kretsbyggnadsprocessen skulle fokusera på att
  leda till en krets som producerar ett kort högfrekvent ljud då den placeras
  i en mörk omgivning; slumpmässigheten ansågs vara en sekundär prioritering.
@@ -362,10 +363,18 @@ Efter att den första skissen presenterats för vår handledare konstaterades
  Det bästa valet av fototransistor verkade vara en skymningssensor, då den
  skulle skilja på det ljus rummet innehar dagtid och nattetid.
  En vanlig fototransistor var dock fullt tillräcklig för uppgiften.
+<<<<<<< HEAD
  Efter ett möte med handledare hade en fototransistor förvärvats och transistorn
  testades genom en ström-spänningsförstärkare.
  Därefter började en kretsdel byggas runt transistorn.
  Förstärkaren baserades på en OP-förstärkare av typ TL071CN, se bilaga().
+=======
+ Efter ett möte med handledare hade en fototransistor förvärvats, vilken
+ en kretsdel började byggas runt.
+ Först testades transistorn genom en ström-spänningsförstärkare.
+ Förstärkaren baserades på en OP-förstärkare av typ TL071CN, ###################
+################## se bilaga().
+>>>>>>> 1012357eb18f142652373f7c0b9e691f29a79543
  Kretsen drevs med 4,5 V, genererad med ett batteri på 9 V, vilket det spännings
 delades över.
  Resultatet av detta test var svårt att tolka.
@@ -417,8 +426,14 @@ Byte av samtliga OP-förstärkare
 \end_layout
 
 \begin_layout Standard
+<<<<<<< HEAD
 Efter många timmars felsökning byttes de tre OP-förstärkarna ut mot komponent
  LM2902N, bestående av fyra OP-förstärkare.
+=======
+Många timmars felsökning senare byttes de tre OP-förstärkarna ut mot komponent
+ LM2902N ############################################## (BILAGA), bestående
+ av fyra OP-förstärkare.
+>>>>>>> 1012357eb18f142652373f7c0b9e691f29a79543
  Då det fastslagits att denna fungerade korrekt, bestämdes nya resistanser
  till komparatorns jämförelsespänning.
  Då detta fick göras om några gånger, byttes resistanserna ut mot en potentiomet
@@ -570,6 +585,14 @@ Resultat
 
 \begin_layout Section
 Diskussion
+\end_layout
+
+\begin_layout Subsection
+Ljuskänslig givare
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Subsection
@@ -1039,12 +1062,16 @@ Bridge Circuits - Marying Gain and Balance, Wien Bridge-Based Oscillators.
 Internet
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 www.hyperphysics.phy-astr.gsu.edu/hbase/electronic/flipflop.html
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 http://www.ietlabs.com/pdf/GR_Experimenters/1960/GenRad_Experimenter_Jan_1960.pdf
+\end_layout
+
+\begin_layout Itemize
+http://www.ict.kth.se/courses/IE1204/HING/Teori/opto3r2.pdf
 \end_layout
 
 \end_body
