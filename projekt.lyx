@@ -606,8 +606,8 @@ Vid en första anblick av syskonretarens funktion kan man tycka att en SR-vippa
 \end_layout
 
 \begin_layout Standard
-När en etta skickas på ?S?-ingången på SR-vippan lagras en digital etta
- i SR-vippan.
+När en etta skickas på ?S?##############################################3-ingång
+en på SR-vippan lagras en digital etta i SR-vippan.
  En återkoppling från utgången till R-ingången gör dock att SR-vippan återställe
 r sig själv.
  I återkopplingen laddas en kondoensator upp genom en resistans, vilket
@@ -631,8 +631,8 @@ Insignal
 \end_layout
 
 \begin_layout Standard
-För att generera digitala ettor som triggar igång ett pip använde vi oss
- av två stycken wien-bryggor.
+För att generera digitala ettor som triggar igång ett pip användes två stycken
+ wien-bryggor.
  Oscillatorerna var nästan identiska, skillnaden var kapacitanserna som
  användes.
  Med en skillnad på endast 1pF genererades två signaler med en mycket liten
