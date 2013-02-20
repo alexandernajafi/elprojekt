@@ -197,6 +197,25 @@ reference "fig:jklatch"
 \end_layout
 
 \begin_layout Subsection
+Fototransistor
+\end_layout
+
+\begin_layout Standard
+En fototransistor är i huvudsak uppbyggd som en vanlig transistor med skillnaden
+ att ljus kan falla in över kollektor-bas-övergången som fungerar som en
+ bakspänd diod.
+ Backströmmen är beroende av mängden ljus som faller in, ju mer ljus som
+ faller in desto större blir backströmmen, samt ljusets våglängd.
+ Unikt för fototransistorn är att den genererar en ström och en spänning,
+ där strömmen är mycket högre än vad andra fotokomponenter klarar av.
+ En nackdel med fototransistorer är att de jämfört med likartade komponenter
+ är långsam.
+ Detta beror på att kollektor-bas-övergången har fått stort utrymme för
+ att kunna fånga upp så mycket ljus som möjligt.
+ 
+\end_layout
+
+\begin_layout Subsection
 Slumpgenerator 
 \end_layout
 
