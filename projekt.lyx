@@ -623,8 +623,8 @@ Insignal
 \end_layout
 
 \begin_layout Standard
-För att generera digitala ettor som triggar igång ett pip använde vi oss
- av två stycken wien-bryggor.
+För att generera digitala ettor som triggar igång ett pip användes två stycken
+ wien-bryggor.
  Oscillatorerna var nästan identiska, skillnaden var kapacitanserna som
  användes.
  Med en skillnad på endast 1pF genererades två signaler med en mycket liten
