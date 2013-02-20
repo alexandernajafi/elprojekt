@@ -354,8 +354,8 @@ stor.
  en komparator efter förstärkaren.
  Den gav dock inte det väntade resultatet.
  Beräkningen av resistansen för jämförelsespänningen gjordes om flera gånger.
- Det diskuterades också om huruvida Vcc- kunde kopplas till jord, eller
- om det behövdes en negativ spänning till.
+ Det diskuterades också om huruvida den negativa matningsspänningen kunde
+ kopplas till jord, eller om det behövdes en negativ spänning.
  Efter försök med båda dessa matningsalternativ, som båda resulterade i
  samma fel, byttes OP-förstärkaren ut.
  Den nya OP-förstärkaren ledde till samma problem, vilket ledde till slutsaten
@@ -366,7 +366,7 @@ stor.
  Under de tester som gjordes då kretsen var funktionell framkom dock att
  utspänningen från komparatorn blev cirka 0,8 V, istället för de beräknade
  0 ,då fototransistorn befann sig i mörker.
- 
+ Försök att 
 \end_layout
 
 \begin_layout Subsubsection
@@ -384,7 +384,8 @@ förstärkningsdelar?
 \end_inset
 
 .
- Detta gav återigen
+ Då det fastslogs att denna fungerade, bestämdes nya resistanser till komparator
+n 
 \end_layout
 
 \begin_layout Standard
