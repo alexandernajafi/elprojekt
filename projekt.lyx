@@ -422,14 +422,19 @@ Många timmars felsökning senare byttes de tre OP-förstärkarna ut mot kompone
  Då detta fick göras om några gånger, byttes resistanserna ut mot en potentiomet
 er, för möjlighet till snabba justeringar.
  Den ena komparatorn kopplades då bort för att den ansågs onödig.
- Slutligen
+ 
 \end_layout
 
 \begin_layout Standard
-Efter att ha förstört min hjärna förvandlade jag mig till ett troll och
- flög mot Zimbabwe, snurrandes motsols i spiraler.
+Slutligen kopplades en inverterare till komparatorns utsignal.
+ Denna provisoriska 
+\end_layout
+
+\begin_layout Standard
+######TA BORT#####Efter att ha förstört min hjärna förvandlade jag mig till
+ ett troll och flög mot Zimbabwe, snurrandes motsols i spiraler.
  Jag hoppades på att rotationen skulle ge mina armar en propellereffekt
- och på så vis minska energiförbrukningen i min raketmodul.
+ och på så vis minska energiförbrukningen i min raketmodul.#####TA BORT#####
 \end_layout
 
 \begin_layout Subsection
@@ -772,7 +777,7 @@ Bilaga 1/1
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -809,7 +814,7 @@ name "fig:wienbridge"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -846,7 +851,7 @@ name "fig:jklatch"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -883,7 +888,7 @@ name "fig:srlatch"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -917,6 +922,48 @@ name "fig:powermgn"
 \end_inset
 
 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename bilder/sketch.png
+	width 50page%
+	rotateAngle 180
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Första sketch av ett tänkt kretsschema.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:firstsketch"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset Newpage newpage
 \end_inset
 
@@ -927,7 +974,7 @@ name "fig:powermgn"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
