@@ -365,10 +365,13 @@ Dagen efter mötet då den första skissen presenterades konstaterades att
  En vanlig fototransistor var dock fullt tillräcklig för uppgiften.
  Efter ett möte med handledare hade en fototransistor förvärvats, vilken
  en kretsdel började byggas runt.
- Först testades transistorn genom en ström-spänningsförstärkare, där hela
- kretsen drevs med ett 9 V batteri spänningsdelat till 4,5 V, med osäkert
- resultat.
- Även utan signal in i förstärkaren blev utsignalen lika stor som Vcc.
+ Först testades transistorn genom en ström-spänningsförstärkare.
+ Förstärkaren baserades på en OP-förstärkare av typ TL071CN, se bilaga().
+ Kretsen drevs med 4,5 V, genererad med ett batteri på 9 V, vilket det spännings
+delades över.
+ Resultatet av detta test var svårt att tolka.
+ Även utan signal in i förstärkaren blev utsignalen lika stor som matningsspänni
+ngen.
  Att detta första försök till ström-spänningsförstärkning blev felaktigt,
  ledde till att det tog lång tid innan det konstaterades att fototransistorn
  inte fungerade.
@@ -388,20 +391,21 @@ Efter lite research hos andra grupper valdes istället en annan fototransistor.
  det mätas upp en skillnad i utspänning mellan belyst och skuggbelagd fototransi
 stor.
  För att omvandla denna spänningsskillnad till logiska signaler, kopplades
- en komparator efter OP-förstärkaren (TL071CN).
+ en komparator in efter förstärkaren.
+ Komparatorn var även den baserad på OP-förstärkare TL071CN.
  Den gav dock inte det väntade resultatet.
  Beräkningen av resistansen för jämförelsespänningen gjordes om flera gånger.
  Det diskuterades också om huruvida den negativa matningsspänningen kunde
  kopplas till jord, eller om det behövdes en negativ spänning.
- Efter försök med båda dessa matningsalternativ, som båda resulterade i
- samma fel, byttes OP-förstärkaren ut mot en annan av samma typ.
+ Efter försök med båda dessa spänningsmatningsalternativ, som båda resulterade
+ i samma fel, byttes OP-förstärkaren ut mot en annan av samma typ.
  Den nya OP-förstärkaren ledde till samma problem, vilket ledde till slutsaten
  att komparatorn hade sammankopplats felaktigt.
  Efter en stunds felsökning och omkoppling tycktes kretsen fungera som planerat.
  Den var dock väldigt opålitlig, med en funktionalitet som höll i sig cirka
  tio minuter, innan det behövdes ny felsökning och omkoppling i en halvtimme.
  Under de tester som gjordes då kretsen var funktionell framkom dock att
- utspänningen från komparatorn blev cirka 0,8 V, istället för de beräknade
+ utspänningen från komparatorn blev cirka 0,8 V, istället för de förväntade
  0 ,då fototransistorn befann sig i mörker.
  Att utföra ännu en komparation gav en ny utspänning på 0,6 V vid mörker.
 \end_layout
@@ -411,18 +415,21 @@ Byte av samtliga OP-förstärkare
 \end_layout
 
 \begin_layout Standard
-Många timmars felsökning senare byttes de tre OP-förstärkarna ut mot OP-förstärk
-are LM2902N, som är fyra OP-förstärkare i en komponent.
- Då det fastslogs att denna fungerade, bestämdes nya resistanser till komparator
-ns jämförelsespänning.
+Många timmars felsökning senare byttes de tre OP-förstärkarna ut mot komponent
+ LM2902N, bestående av fyra OP-förstärkare.
+ Då det fastslagits att denna fungerade korrekt, bestämdes nya resistanser
+ till komparatorns jämförelsespänning.
  Då detta fick göras om några gånger, byttes resistanserna ut mot en potentiomet
-er.
- 
+er, för möjlighet till snabba justeringar.
+ Den ena komparatorn kopplades då bort för att den ansågs onödig.
+ Slutligen
 \end_layout
 
 \begin_layout Standard
-HÄR MÅSTE VI FORTSÄTTA MED ATT FÖRKLARA ATT OP-FÖRSTÄRKARNA VAR SÄMST OCH
- ATT DET TOG EN VECKA ATT FATTA DET...
+Efter att ha förstört min hjärna förvandlade jag mig till ett troll och
+ flög mot Zimbabwe, snurrandes motsols i spiraler.
+ Jag hoppades på att rotationen skulle ge mina armar en propellereffekt
+ och på så vis minska energiförbrukningen i min raketmodul.
 \end_layout
 
 \begin_layout Subsection
