@@ -381,7 +381,8 @@ Byte av fototransistor
 \end_layout
 
 \begin_layout Standard
-Efter lite research hos andra grupper valdes istället en annan fototransistor.
+Efter diskussioner med och informationssökning hos andra grupper valdes
+ istället en annan fototransistor.
  När denna testades i en krets där transistorn kopplades till ingången på
  en ström-spänningsförstärkare, denna gång drivet med spänningskub, kunde
  det mätas upp en skillnad i utspänning mellan belyst och skuggbelagd fototransi
@@ -575,17 +576,22 @@ Ljuskänslig givare
 \end_layout
 
 \begin_layout Standard
-Denna del av kretsen visade sig tydligt vara den mest problematiska, med
- många komponenter som fungerade dåligt och som inte kunde testas individuellt,
- vilket gjorde det svårt att avgöra vilken komponent det var som inte fungerade.
-\end_layout
-
-\begin_layout Standard
 Det bestämdes tidigt att den ljuskänsliga delen av kretsen skulle flyttas
  till kretsens början.
  Detta gjordes för att minimera energikonsumtionen då kretsen inte befinner
  sig i mörker.
- Inget
+\end_layout
+
+\begin_layout Standard
+Denna del av kretsen visade sig tydligt vara den mest problematiska, med
+ många komponenter som fungerade dåligt och som inte kunde testas individuellt,
+ vilket gjorde det svårt att avgöra vilken komponent det var som inte fungerade.
+ Ett tydligt exempel på detta var testerna som gjordes på den första fototransis
+torn.
+ Eftersom varken fototransistorn eller förstärkaren som användes för att
+ testa den fungerade som de skulle, tog det lång tid att komma fram till
+ att de båda behövde bytas ut.
+ Att
 \end_layout
 
 \begin_layout Subsection
