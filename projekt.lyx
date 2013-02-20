@@ -354,18 +354,17 @@ Omplanering av ljuskänslig delkrets
 \end_layout
 
 \begin_layout Standard
-Dagen efter mötet då den första skissen presenterades konstaterades att
- den ljuskänsliga delen skulle placeras tidigare i kretsen, där den skulle
- fungera som brytare för resten av kretsen.
+Efter att den första skissen presenterats för vår handledare konstaterades
+ att den ljuskänsliga delen skulle placeras tidigare i kretsen, där den
+ skulle fungera som brytare för resten av kretsen.
  Detta för att minimera energikonsumtionen då kretsen inte befinner sig
  i mörker.
  Det bästa valet av fototransistor verkade vara en skymningssensor, då den
- skulle skilja på det ljus rummet innehar dagtid och det mörker som infaller
- nattetid.
+ skulle skilja på det ljus rummet innehar dagtid och nattetid.
  En vanlig fototransistor var dock fullt tillräcklig för uppgiften.
- Efter ett möte med handledare hade en fototransistor förvärvats, vilken
- en kretsdel började byggas runt.
- Först testades transistorn genom en ström-spänningsförstärkare.
+ Efter ett möte med handledare hade en fototransistor förvärvats och transistorn
+ testades genom en ström-spänningsförstärkare.
+ Därefter började en kretsdel byggas runt transistorn.
  Förstärkaren baserades på en OP-förstärkare av typ TL071CN, se bilaga().
  Kretsen drevs med 4,5 V, genererad med ett batteri på 9 V, vilket det spännings
 delades över.
@@ -375,9 +374,9 @@ ngen.
  Att detta första försök till ström-spänningsförstärkning blev felaktigt,
  ledde till att det tog lång tid innan det konstaterades att fototransistorn
  inte fungerade.
- Det konstaterades efter några dagar utan framsteg att batteriet ledde till
- märkliga spänningsdelningar över kopplingsplattan ‒ ett problem som konstaterad
-es även av andra grupper.
+ Efter några framgångslösa dagar konstaterades att kopplingen med batteriet
+ ledde till märkliga spänningsdelningar över kopplingsplattan ‒ ett problem
+ som konstaterades även av andra grupper.
 \end_layout
 
 \begin_layout Subsubsection
@@ -390,8 +389,8 @@ Efter lite research hos andra grupper valdes istället en annan fototransistor.
  en ström-spänningsförstärkare, denna gång drivet med spänningskub, kunde
  det mätas upp en skillnad i utspänning mellan belyst och skuggbelagd fototransi
 stor.
- För att omvandla denna spänningsskillnad till logiska signaler, kopplades
- en komparator in efter förstärkaren.
+ För att omvandla spänningsskillnaden till logiska signaler, kopplades en
+ komparator in efter förstärkaren.
  Komparatorn var även den baserad på OP-förstärkare TL071CN.
  Den gav dock inte det väntade resultatet.
  Beräkningen av resistansen för jämförelsespänningen gjordes om flera gånger.
@@ -415,7 +414,7 @@ Byte av samtliga OP-förstärkare
 \end_layout
 
 \begin_layout Standard
-Många timmars felsökning senare byttes de tre OP-förstärkarna ut mot komponent
+Efter många timmars felsökning byttes de tre OP-förstärkarna ut mot komponent
  LM2902N, bestående av fyra OP-förstärkare.
  Då det fastslagits att denna fungerade korrekt, bestämdes nya resistanser
  till komparatorns jämförelsespänning.
