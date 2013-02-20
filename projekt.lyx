@@ -728,7 +728,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename bilder/wienbridge.pdf
+	filename /home/alexander/repos/skolarbete/elprojekt/bilder/wienbridge.pdf
 	width 50page%
 
 \end_inset
@@ -764,6 +764,16 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/alexander/repos/skolarbete/elprojekt/bilder/jklatch.png
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -789,6 +799,16 @@ name "fig:jklatch"
 wide false
 sideways false
 status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/alexander/repos/skolarbete/elprojekt/bilder/sr-latch.png
+	width 50page%
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -818,6 +838,16 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/alexander/repos/skolarbete/elprojekt/bilder/powermgn.png
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -825,6 +855,55 @@ Koppling av huvudsaklig strömkälla.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:powermgn"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename bilder/projekt.png
+	height 90pheight%
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Kretschema över hela kretsen.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:fullcircuit"
 
 \end_inset
 
