@@ -351,13 +351,13 @@ Efter lite research hos andra grupper valdes istället en annan fototransistor.
  det mätas upp en skillnad i utspänning mellan belyst och skuggbelagd fototransi
 stor.
  För att omvandla denna spänningsskillnad till logiska signaler, kopplades
- en komparator efter förstärkaren.
+ en komparator efter OP-förstärkaren (TL071CN).
  Den gav dock inte det väntade resultatet.
  Beräkningen av resistansen för jämförelsespänningen gjordes om flera gånger.
  Det diskuterades också om huruvida den negativa matningsspänningen kunde
  kopplas till jord, eller om det behövdes en negativ spänning.
  Efter försök med båda dessa matningsalternativ, som båda resulterade i
- samma fel, byttes OP-förstärkaren ut.
+ samma fel, byttes OP-förstärkaren ut mot en annan av samma typ.
  Den nya OP-förstärkaren ledde till samma problem, vilket ledde till slutsaten
  att komparatorn hade sammankopplats felaktigt.
  Efter en stunds felsökning och omkoppling tycktes kretsen fungera som planerat.
@@ -366,7 +366,7 @@ stor.
  Under de tester som gjordes då kretsen var funktionell framkom dock att
  utspänningen från komparatorn blev cirka 0,8 V, istället för de beräknade
  0 ,då fototransistorn befann sig i mörker.
- Försök att 
+ Att utföra ännu en komparation gav en ny utspänning på 0,6 V vid mörker.
 \end_layout
 
 \begin_layout Subsubsection
@@ -374,18 +374,13 @@ Byte av samtliga OP-förstärkare
 \end_layout
 
 \begin_layout Standard
-Många timmars felsökning senare byttes båda OP-förstärkarna ut mot en OP
- med 4 
-\begin_inset Quotes eld
-\end_inset
-
-förstärkningsdelar?
-\begin_inset Quotes erd
-\end_inset
-
-.
+Många timmars felsökning senare byttes de tre OP-förstärkarna ut mot OP-förstärk
+are LM2902N, som är fyra OP-förstärkare i en komponent.
  Då det fastslogs att denna fungerade, bestämdes nya resistanser till komparator
-n 
+ns jämförelsespänning.
+ Då detta fick göras om några gånger, byttes resistanserna ut mot en potentiomet
+er.
+ 
 \end_layout
 
 \begin_layout Standard
