@@ -362,19 +362,16 @@ Efter att den första skissen presenterats för vår handledare konstaterades
  i mörker.
  Det bästa valet av fototransistor verkade vara en skymningssensor, då den
  skulle skilja på det ljus rummet innehar dagtid och nattetid.
- En vanlig fototransistor var dock fullt tillräcklig för uppgiften.
-<<<<<<< HEAD
- Efter ett möte med handledare hade en fototransistor förvärvats och transistorn
- testades genom en ström-spänningsförstärkare.
+ En vanlig fototransistor var dock fullt tillräcklig för uppgiften.<<<<<<<
+ HEAD Efter ett möte med handledare hade en fototransistor förvärvats och
+ transistorn testades genom en ström-spänningsförstärkare.
  Därefter började en kretsdel byggas runt transistorn.
- Förstärkaren baserades på en OP-förstärkare av typ TL071CN, se bilaga().
-=======
+ Förstärkaren baserades på en OP-förstärkare av typ TL071CN, se bilaga().=======
  Efter ett möte med handledare hade en fototransistor förvärvats, vilken
  en kretsdel började byggas runt.
  Först testades transistorn genom en ström-spänningsförstärkare.
  Förstärkaren baserades på en OP-förstärkare av typ TL071CN, ###################
-################## se bilaga().
->>>>>>> 1012357eb18f142652373f7c0b9e691f29a79543
+################## se bilaga().>>>>>>> 1012357eb18f142652373f7c0b9e691f29a79543
  Kretsen drevs med 4,5 V, genererad med ett batteri på 9 V, vilket det spännings
 delades över.
  Resultatet av detta test var svårt att tolka.
@@ -426,14 +423,9 @@ Byte av samtliga OP-förstärkare
 \end_layout
 
 \begin_layout Standard
-<<<<<<< HEAD
-Efter många timmars felsökning byttes de tre OP-förstärkarna ut mot komponent
- LM2902N, bestående av fyra OP-förstärkare.
-=======
 Många timmars felsökning senare byttes de tre OP-förstärkarna ut mot komponent
  LM2902N ############################################## (BILAGA), bestående
  av fyra OP-förstärkare.
->>>>>>> 1012357eb18f142652373f7c0b9e691f29a79543
  Då det fastslagits att denna fungerade korrekt, bestämdes nya resistanser
  till komparatorns jämförelsespänning.
  Då detta fick göras om några gånger, byttes resistanserna ut mot en potentiomet
@@ -589,10 +581,6 @@ Diskussion
 
 \begin_layout Subsection
 Ljuskänslig givare
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \begin_layout Subsection
