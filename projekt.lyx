@@ -393,7 +393,10 @@ stor.
  För att omvandla denna spänningsskillnad till logiska signaler, kopplades
  en komparator in efter förstärkaren.
  Komparatorn var även den baserad på OP-förstärkare TL071CN.
- Den gav dock inte det väntade resultatet.
+ Till den positiva ingången kopplades utsignalen från ström-spänningsförstärkare
+n och till den negativa ingången kopplades en jämförelsespänning skapad
+ genom spänningsdelning från 6 V.
+ Komparatorn gav dock inte det väntade resultatet.
  Beräkningen av resistansen för jämförelsespänningen gjordes om flera gånger.
  Det diskuterades också om huruvida den negativa matningsspänningen kunde
  kopplas till jord, eller om det behövdes en negativ spänning.
@@ -427,14 +430,11 @@ er, för möjlighet till snabba justeringar.
 
 \begin_layout Standard
 Slutligen kopplades en inverterare till komparatorns utsignal.
- Denna provisoriska 
-\end_layout
-
-\begin_layout Standard
-######TA BORT#####Efter att ha förstört min hjärna förvandlade jag mig till
- ett troll och flög mot Zimbabwe, snurrandes motsols i spiraler.
- Jag hoppades på att rotationen skulle ge mina armar en propellereffekt
- och på så vis minska energiförbrukningen i min raketmodul.#####TA BORT#####
+ Denna provisoriska lösning testades tillsammans med resten av kretsen.
+ Då vi insåg att den inverterade signalen kunde uppnås genom att koppla
+ om ingångarna till komparatorn, med förstärkarens utsignal till komparatorns
+ negativa ingång och jämförelsespänningen till den positiva, togs inverteraren
+ bort.
 \end_layout
 
 \begin_layout Subsection
