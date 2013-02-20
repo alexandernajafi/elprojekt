@@ -422,14 +422,19 @@ Många timmars felsökning senare byttes de tre OP-förstärkarna ut mot kompone
  Då detta fick göras om några gånger, byttes resistanserna ut mot en potentiomet
 er, för möjlighet till snabba justeringar.
  Den ena komparatorn kopplades då bort för att den ansågs onödig.
- Slutligen
+ 
 \end_layout
 
 \begin_layout Standard
-Efter att ha förstört min hjärna förvandlade jag mig till ett troll och
- flög mot Zimbabwe, snurrandes motsols i spiraler.
+Slutligen kopplades en inverterare till komparatorns utsignal.
+ Denna provisoriska 
+\end_layout
+
+\begin_layout Standard
+######TA BORT#####Efter att ha förstört min hjärna förvandlade jag mig till
+ ett troll och flög mot Zimbabwe, snurrandes motsols i spiraler.
  Jag hoppades på att rotationen skulle ge mina armar en propellereffekt
- och på så vis minska energiförbrukningen i min raketmodul.
+ och på så vis minska energiförbrukningen i min raketmodul.#####TA BORT#####
 \end_layout
 
 \begin_layout Subsection
@@ -562,10 +567,6 @@ När alla enskilda element var färdigbyggda återstod enbart att sammankoppla
 
 \begin_layout Section
 Resultat
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \begin_layout Section
