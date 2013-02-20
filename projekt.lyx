@@ -517,6 +517,14 @@ När alla enskilda element var färdigbyggda återstod enbart att sammankoppla
 \end_layout
 
 \begin_layout Section
+Resultat
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Section
 Diskussion
 \end_layout
 
@@ -724,11 +732,11 @@ Bilaga 1/1
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/alexander/repos/skolarbete/elprojekt/bilder/wienbridge.pdf
+	filename bilder/wienbridge.pdf
 	width 50page%
 
 \end_inset
@@ -761,11 +769,11 @@ name "fig:wienbridge"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/alexander/repos/skolarbete/elprojekt/bilder/jklatch.png
+	filename bilder/jklatch.png
 	width 50page%
 
 \end_inset
@@ -798,11 +806,11 @@ name "fig:jklatch"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/alexander/repos/skolarbete/elprojekt/bilder/sr-latch.png
+	filename bilder/sr-latch.png
 	width 50page%
 
 \end_inset
@@ -835,11 +843,11 @@ name "fig:srlatch"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/alexander/repos/skolarbete/elprojekt/bilder/powermgn.png
+	filename bilder/powermgn.png
 	width 50page%
 
 \end_inset
@@ -880,10 +888,6 @@ name "fig:powermgn"
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Graphics
