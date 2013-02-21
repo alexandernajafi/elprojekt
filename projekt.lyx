@@ -647,7 +647,7 @@ I detta projekt är felkällorna väldigt många, men väldigt små; kopplas det
  Den största felkällan i kretsen är dock kablarna som använts: Det verkar
  som om kablarna ger ifrån sig såpass kraftiga elektromagnetiska fält att
  det bildar störningar i kretsen.
- Dessa störningar märks mest när man gör kablarna eller vickar lite på dem.
+ Dessa störningar märks mest när man rör kablarna eller vickar lite på dem.
  Detta problem skulle delvis kunna lösas med kortare kablar, eller med skärmade
  kablar som skyddar mot kretsens interna fält.
  
@@ -656,7 +656,7 @@ I detta projekt är felkällorna väldigt många, men väldigt små; kopplas det
 \begin_layout Standard
 Även med allt detta inräknat i resultatet är medlemmarna förnöjda med kretsens
  slutgiltiga komposition och funktion: Den fungerar som den var avsedd att
- göra, vilket har visat sig såväl i teorin som pratiken.=======
+ göra, vilket har visat sig såväl i teorin som pratiken.
 \end_layout
 
 \begin_layout Section
@@ -664,7 +664,7 @@ Diskussion
 \end_layout
 
 \begin_layout Subsection
-Ljuskänslig givare>>>>>>> dc319da267fdc3355809fd3b4892838906a23996
+Ljuskänslig givare
 \end_layout
 
 \begin_layout Standard
