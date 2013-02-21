@@ -104,15 +104,16 @@ Wien-brygga
 \end_layout
 
 \begin_layout Standard
-Max Wiens uppfinning från 1891, wienbryggan är en sinus-oscillator som idag
- är ett av de enklaste sätten att omvandla en DC-spänning till en klar sinusvåg.
+Max Wiens uppfinning från 1891, wienbryggan, är en sinus-oscillator som
+ idag används som ett av de enklaste sätten att omvandla en DC-spänning
+ till en klar sinusvåg.
  En förenkling av denna skrev Wilam R.
  Hewlet om i sitt mastersarbete från Stanford 1939.
  När en wienbrygga senare nämns i denna text syftas det på den senare som
  Hewlet beskrev.
- En wienbrygga kan med hjälp av endast två kondensatorer och fyra resitorer
+ En wienbrygga kan med hjälp av endast två kondensatorer och fyra resistorer
  samt en OP-förstärkare konstrueras.
- Wienbryggan kan användas för att på ett mycket enkelt sätt generarea en
+ Wienbryggan kan användas för att på ett mycket enkelt sätt generera en
  klar sinusvåg inom ett mycket brett frekvensband.
  Wienbryggan som beskrevs av Hewlet var dock inte fullt så enkel som den
  som synes i Figur
@@ -124,8 +125,7 @@ reference "fig:wienbridge"
 
 .
  Hewlet använde en lampa för att stabilisera kretsen samt få en finare sinusvåg,
- med lampan fås nämligen en sinusvåg ut med en distortion på mindre på ca
- 0,0025%.
+ med lampan fås nämligen en sinusvåg ut med en distortion på ca 0,0025%.
  Anledningen till att han valde att använda en helt vanlig glödlampa var
  att dess resistans är direkt proportionell mot värmen i glödtråden.
  Även om lampan aldrig lyser hjälper den till att stabilisera kretsen.
@@ -133,7 +133,7 @@ reference "fig:wienbridge"
  samt att vågen inte håller samma stabilitet.
  I Figur 1 syns en krets utan användningen av en lampa.
  I kretsen är Motstånden dimensionerade så att R2=R1.
- Detta vilkor samt att C1=C2 måste alltid behållas för en fungerande krets.
+ Detta villkor samt att C1=C2 måste alltid behållas för en fungerande krets.
  Med hjälp av potentiometern kan frekvensen finjusteras.
  Frekvensen påverkas även väldigt mycket av storlekarna på R1, R2, C1 och
  C2.
