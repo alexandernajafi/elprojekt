@@ -390,11 +390,8 @@ Omplanering av ljuskänslig delkrets
 \end_layout
 
 \begin_layout Standard
-Efter att den första skissen presenterats för vår handledare konstaterades
- att den ljuskänsliga delen skulle placeras tidigare i kretsen, där den
- skulle fungera som brytare för resten av kretsen.
- Efter ett möte med handledare hade en fototransistor förvärvats, vilken
- en kretsdel började byggas runt.
+Efter att den första skissen presenterats till handledare förvärvades en
+ fototransistor, vilken en kretsdel började byggas runt.
  Först testades transistorn genom en ström-spänningsförstärkare.
  Förstärkaren baserades på en OP-förstärkare av typ TL071CN.
  Kretsen drevs med 4,5 V, genererad med ett batteri på 9 V, vilket det spännings
@@ -685,13 +682,10 @@ Ljuskänslig givare
 \end_layout
 
 \begin_layout Standard
-Det bestämdes tidigt att den ljuskänsliga delen av kretsen skulle flyttas
- till kretsens början.
- Detta gjordes för att minimera energikonsumptionen då kretsen inte befann
- sig i mörker.
- Denna del av kretsen visade sig tydligt vara den mest problematiska, med
- många komponenter som fungerade dåligt och som inte kunde testas individuellt,
- vilket gjorde det svårt att avgöra vilken komponent det var som inte fungerade.
+Denna ljuskänsliga del av kretsen visade sig tydligt vara den mest problematiska
+, med många komponenter som fungerade dåligt och som inte kunde testas individue
+llt, vilket gjorde det svårt att avgöra vilken komponent det var som inte
+ fungerade.
  Ett tydligt exempel på detta var testerna som gjordes på den första fototransis
 torn.
  Eftersom varken fototransistorn eller förstärkaren som användes för att
