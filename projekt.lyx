@@ -515,10 +515,10 @@ Det bestämdes tidigt att insignalen primärt kunde lösas med hjälp av två
  justera deras frekvenser med hjälp av varsin potentiometer.
  Oscillatorernas frekvenser ställdes sedan in så att deras toppar möttes
  med ett bestämt tidsintervall.
- Denna intervall är den tid det tar ifrån att ett pip har avslutats tills
- dess att ett nytt pip ljuder.
+ Detta intervall är den tid det tar ifrån att ett pip startar tills dess
+ att ett nytt pip ljuder.
  Oscillatorernas utsignaler sammanfogades med hjälp av en adderare konstruerad
- med hjälp av en OP-förstärkare.
+ av en OP-förstärkare.
  Adderarens utsignal är kopplad som en av referenspänningarna på den efterföljan
 de komparatorn.
  På komparatorns andra referensingång kopplades en potentiometer in.
@@ -535,14 +535,14 @@ Det bestämdes tidigt att kretsen som skulle ge ifrån sig ljudet skulle styras
  av vippans utsignal.
  Själva ljudsignalen tänktes skapas i någon slags oscillator.
  Första idén på oscillatortyp var en CMOS-oscillator denna idé skulle kunna
- ha funkat felfritt med vår övriga krets men denna valdes ändå bort och
- byttes ut mot en Wien-brygoscillator som skulle ge ett mycket renare ljud
- och inte alls lika hackigt som det av en CMOS.
- Oscillatorn konstruerades med en potentiometer så att dennas frekvens enkelt
- kan ändras.
- Oscillatorns utsignal kopplas direkt till en högtalare.
+ ha fungerat felfritt med vår övriga krets men denna valdes ändå bort och
+ byttes ut mot en Wien-brygga som skulle ge ett mycket renare ljud och inte
+ alls lika hackigt som det av en CMOS.
+ Oscillatorn konstruerades med en potentiometer så att dess frekvens enkelt
+ kunde ändras.
+ Oscillatorns utsignal kopplades direkt till en högtalare.
  På oscillatorns OP-förstärkares matningsspänning kopplades en transistor
- in som styrs av vippans utsignal.
+ in som styrdes av SR-vippans utsignal.
 \end_layout
 
 \begin_layout Subsection
