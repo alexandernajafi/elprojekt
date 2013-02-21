@@ -222,8 +222,8 @@ Fototransistor
 En fototransistor är i huvudsak uppbyggd som en vanlig transistor med skillnaden
  att ljus kan falla in över kollektor-bas-övergången som fungerar som en
  bakspänd diod.
- Backströmmen är beroende av mängden ljus som faller in, ju mer ljus som
- faller in desto större blir backströmmen, samt ljusets våglängd.
+ Backströmmen är beroende av mängden ljus som faller in och ljusets våglängd.
+ Desto större mängd ljus som faller in, ju större blir backströmmen.
  Unikt för fototransistorn är att den genererar en ström och en spänning,
  där strömmen är mycket högre än vad andra fotokomponenter klarar av.
  En nackdel med fototransistorer är att de jämfört med likartade komponenter
@@ -1128,7 +1128,8 @@ KÄLLORNA MÅSTE TITULERAS OCH PLACERAS FÖRE BILAGORNA!!!!!!!!! ###############
 \end_layout
 
 \begin_layout Itemize
-www.hyperphysics.phy-astr.gsu.edu/hbase/electronic/flipflop.html
+Hyper Physics, Georgia State University, hyperphysics.phy-astr.gsu.edu/hbase/electr
+onic/flipflop.html
 \end_layout
 
 \begin_layout Itemize
