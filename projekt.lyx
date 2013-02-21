@@ -667,18 +667,15 @@ Ljuskänslig givare
 \begin_layout Standard
 Det bestämdes tidigt att den ljuskänsliga delen av kretsen skulle flyttas
  till kretsens början.
- Detta gjordes för att minimera energikonsumtionen då kretsen inte befinner
+ Detta gjordes för att minimera energikonsumptionen då kretsen inte befann
  sig i mörker.
-\end_layout
-
-\begin_layout Standard
-Denna del av kretsen visade sig tydligt vara den mest problematiska, med
+ Denna del av kretsen visade sig tydligt vara den mest problematiska, med
  många komponenter som fungerade dåligt och som inte kunde testas individuellt,
  vilket gjorde det svårt att avgöra vilken komponent det var som inte fungerade.
  Ett tydligt exempel på detta var testerna som gjordes på den första fototransis
 torn.
  Eftersom varken fototransistorn eller förstärkaren som användes för att
- testa den fungerade som de skulle, tog det lång tid att komma fram till
+ testa den, fungerade som de skulle, tog det lång tid att komma fram till
  att de båda behövde bytas ut.
  Mycket tid spenderades också på att optimera komparationen, för att säkerställa
  funktionen hos de logiska kretsarna som utgjorde nästa del i kretsen.
