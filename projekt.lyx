@@ -462,40 +462,41 @@ Kretsen som skulle göra att utsignalen höll sig stabil under den tiden då
 
 \begin_layout Standard
 Denna bistabila krets syntes vara lösningen på våra problem ty den var både
- simpel och pålitlig.
+ enkel och pålitlig.
  Utifrån denna idé byggdes en enkel modell av hjälp av två stycken logiska
  NAND-grindar.
  Efter vissa komplikationer med testning av denna kretsdel stod det snart
- klart att detta berodde på att ingångarna lämnades ojordade när tester
- pågick av motsatt ingång, detta ledde till helt felaktiga mätresultat och
- en ickefungerande krets.
- När detta misstag upptäkts kunde denna del av kretsen snabbt färdigställas.
+ klart att detta berodde på att ingångarna lämnats ojordade när tester pågick
+ av motsatt ingång, detta ledde till helt felaktiga mätresultat och en ickefunge
+rande krets.
+ När detta misstag upptäckts kunde denna del av kretsen snabbt färdigställas.
  
 \end_layout
 
 \begin_layout Standard
 Nästa utmaning bestod av att på något sätt uppnå en fördröjning av signalen
- som återkopplades till reset ingången som får kretsen att sluta pipa.
- Den första idén om lösning på problemet vara att seriekoppla en kondensator
+ som återkopplades till återställningsingången, ingången som får kretsen
+ att sluta pipa.
+ Den första idén om en lösning på problemet vara att seriekoppla en kondensator
  mellan ut och ingången.
- Denna tänktes vid utgångssignal släppa genom strömmn tills dess att den
- var full då den skulle bryta strömmen, denna signal tänkte sedan inverteras
- för önskvärt resultat.
+ Denna tänktes vid utgångssignal släppa genom strömmen tills dess att den
+ var uppladdad då den skulle bryta strömmen, denna signal tänkte sedan invertera
+s för önskvärt resultat.
  Denna idé kasserades dock efter ett fåtal tester som påvisade dess inkompabilit
 et med resten av kretsen.
- 
 \end_layout
 
 \begin_layout Standard
 En alternativ lösning till problemet kom att bli att seriekoppla en resistans
  med en kondensator, som båda noggrant uppmättes för att få en eftertraktad
  längd på pipet.
- Utsignalen hämtades över kondensatorn och leddes tillbaka till reset ingången.
+ Utsignalen hämtades över kondensatorn och leddes tillbaka till den andra
+ ingången.
  Efter att ha gjort tester märktes snart att spänningsfallet över resistansen
  var för stor för att få återkopplingen att räknas som en logisk etta och
  återställa vippan.
  Men efter att ha ändrat förhållandet mellan kondensatorn och resistansen
- (sänkt resistansen och ökat kapasitansen) blev spänningspotentialen på
+ (sänkt resistansen och ökat kapacitansen) blev spänningspotentialen på
  återkopplingen tillräcklig för att ändra insignalen.
 \end_layout
 
