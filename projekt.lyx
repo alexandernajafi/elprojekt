@@ -172,7 +172,8 @@ reference "fig:srlatch"
 
 \end_inset
 
-, Q1 och Q2) kan SR-vippan endast sätta ett värde eller återställas.
+, Q1 och Q2) kan SR-vippan endast utföra de två operationerna som innebär
+ att lagra ett värde och återställa det lagrade värdet till noll.
  När en digital signal skickas på ingången S, samtidigt som R är en digital
  nolla, sparas en digital etta i SR-vippan.
  Skulle sedan istället en digital etta skickas på S-ingången återställs
@@ -197,7 +198,7 @@ JK-vippa
 \end_layout
 
 \begin_layout Standard
-JK-vippan är den mest mångsidiga av de enklare vipporna, se figur 
+JK-vippan är den mest mångsidiga av de enklare vipporna, se Figur 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:jklatch"
@@ -209,13 +210,14 @@ reference "fig:jklatch"
  Den kan precis som SR-vippan lagra ett värde.
  Detta gör den då en digital etta skickas på J-ingången samtidigt som K-ingågen
  är en nolla.
- På samma sätt som SR-vippan kan JK-vippan återställas om en digital etta
+ På samma sätt som SR-vippan, kan JK-vippan återställas om en digital etta
  skickas på K samtidigt som J är noll.
  Till skillnad från SR-vippan kan däremot JK-vippan skifta sitt lagrade
  värde.
  Detta görs då både K och J är en digital etta.
  På så sätt kan J- och K-ingången kopplas samman och fungera som en T-vippa.
- En T-vippa skiftar värde varje gång en digital etta skickas på ingången.
+ En T-vippa skiftar värde mellan ett och noll varje gång en digital etta
+ skickas på ingången.
  JK-vippan används vanligen mycket flitigt vid byggen av binära räknare.
 \end_layout
 
