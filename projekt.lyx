@@ -38,6 +38,11 @@
 \paperorientation portrait
 \suppress_date false
 \use_refstyle 1
+\branch 3.1
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -558,7 +563,78 @@ Resultat
 \end_layout
 
 \begin_layout Standard
+Projektarbetarna är nöjda med slutresultatet, trots att de inte kunde lägga
+ till en krestdel som gav upphåv till en slumpartad pipcykel eller en regelbunde
+t skiftande tidsfördröjning.
+ Se bilden i bilaga 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:fullcircuit"
 
+\end_inset
+
+.
+ Däremot är de andra delarna i projektet fullt färdigställda, även detta
+ syns i bilaga 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:fullcircuit"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Svårigheter
+\end_layout
+
+\begin_layout Standard
+Den stora svårigheten som stöttes på blev det faktum att kretsen byggdes
+ utefter planen att just en slumpgenerator skulle styra kretsen.
+ Detta gjorde att alla andra komponenter och kretssektioner byggdes för
+ att kunna hantera insignalen från ett batteri och sedan låta varje del
+ i kretsen utföra den designerade funtionen utan att de andra delarna påverkades
+ av det.
+ Till exempel figuren i bilaga 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:jklatch"
+
+\end_inset
+
+; en kretsdel som enbart bygger på logiska funktioner.
+ Denna komplikation gjorde dock att kretsen blev mer komplicerad än nödvändigt
+ för att utföra den funtion den nu gör, däremot har alla gruppmedlemmar
+ lärt sig mycket om hur olika logiska funktioner och operationer fungerar.
+ Även kunskaper om hur ljuskänsliga komponenter fungerar har införskaffats.
+ 
+\end_layout
+
+\begin_layout Subsection
+Felkällor
+\end_layout
+
+\begin_layout Standard
+I detta projekt är felkällorna väldigt många, men väldigt små; kopplas det
+ ihop rätt fungerar det.
+ Dock finns det en potentiell felkälla i i princip varje komponent.
+ Som sagt är dessa felkällor väldigt små och påverkar slutresultatet väldigt
+ lite.
+ Den största felkällan i kretsen är dock kablarna som använts: Det verkar
+ som om kablarna ger ifrån sig såpass kraftiga elektromagnetiska fält att
+ det bildar störningar i kretsen.
+ Dessa störningar märks mest när man gör kablarna eller vickar lite på dem.
+ Detta problem skulle delvis kunna lösas med kortare kablar, eller med skärmade
+ kablar som skyddar mot kretsens interna fält.
+ 
+\end_layout
+
+\begin_layout Standard
+Även med allt detta inräknat i resultatet är medlemmarna förnöjda med kretsens
+ slutgiltiga komposition och funktion: Den fungerar som den var avsedd att
+ göra, vilket har visat sig såväl i teorin som pratiken.
 \end_layout
 
 \begin_layout Section
