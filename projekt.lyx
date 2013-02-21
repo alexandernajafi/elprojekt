@@ -551,19 +551,18 @@ Sammankoppling
 
 \begin_layout Standard
 När alla enskilda element var färdigbyggda återstod enbart att sammankoppla
- alla dessa kretsar.
+ alla delar.
  Detta gjordes enklast genom att tänka sig hur kretsen slutligen skulle
  fungera.
- När det är mörkt i rummet och SR-Vippan ger utsignal ska transistorn som
- matar OP-förstärkaren i ljudoscillatorn öppna source/drain-kanalen så att
- högtalarsignalen börjar svänga.
- Detta löstes genom att SR-Vippans utsignal kopplas till en av ingångarna
+ När det var mörkt i rummet och SR-Vippan gav utsignal skulle transistorn
+ som matade OP-förstärkaren i ljudoscillatorn öppna source/drain-kanalen
+ så att högtalarsignalen började svänga.
+ Detta löstes genom att SR-Vippans utsignal kopplades till en av ingångarna
  på en AND-grind (inverterad NAND-grind).
- På den andra ingången till AND-grinden kopplas utgången från ljuskretsen.
- Detta betyder alltså att när båda dessa ger en logisk etta kommer AND-grindens
+ På den andra ingången till AND-grinden kopplades utgången från ljuskretsen.
+ Detta betydde alltså att när båda dessa gav en logisk etta skulle AND-grindens
  utsignal också ge en logisk etta.
- Spänningen på denna logiska etta ligger på runt 6V som räcker gott för
- att 
+ Spänningen på denna logiska etta låg runt 6V som räckte gott för att 
 \begin_inset Quotes eld
 \end_inset
 
@@ -571,9 +570,9 @@ När alla enskilda element var färdigbyggda återstod enbart att sammankoppla
 \begin_inset Quotes erd
 \end_inset
 
- transistorn som håller ljudoscillatorn stilla.
- Denna koppling ger det sökta resultat, se de olika delarnas funktioner
- under disskussionsdelen.
+ transistorn som höll ljudoscillatorn stilla.
+ Denna koppling gav det sökta resultatet, se de olika delarnas funktioner
+ under diskussionsdelen.
 \end_layout
 
 \begin_layout Standard
