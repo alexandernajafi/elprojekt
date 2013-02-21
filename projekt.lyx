@@ -339,7 +339,7 @@ Utförande
 Det första som gjordes var att dela upp kretsen i mindre delar så att dessa
  kunde byggas och testas separat för att sedan sammanfoga.
  Den första skissen på hur kretsen väntades se ut bestod av en del som gav
- en slumpmässig insignal (Slumpkrets), en ljuskänslig del (Ljuskänslig givare),
+ en slumpmässig insignal (Insignal), en ljuskänslig del (Ljuskänslig givare),
  en del som begränsade ljudets längd (Vippa) samt en del som producerade
  och emmiterade ett högfrekvent ljud (Ljud).
  Den första skissen kan hittas i Figur 
@@ -450,38 +450,52 @@ Vippa
 
 \begin_layout Standard
 Kretsen som skulle göra att utsignalen höll sig stabil under den tiden då
- ljudet skulle låta, oberoende av hur lång den planerade slumpmässiga insignalen
+ ljudet skulle låta, oberoende av hur lång slumpmässiga insignalspulsen
  var, tänktes ursprungligen åstadkommas med hjälp av någon slags bistabil
  krets eller vippa.
  Idén om vippan kretsade omkring att återkoppla dess utsignal till dess
- insignal efter en viss fördröjning vilket skulle leda till att den byter
- läge.
+ insignal efter en viss fördröjning vilket skulle leda till att den efter
+ ett lagom långt pip byter läge.
  Den första prototypen tänktes byggas med en JK-Vippa men denna lösning
- sågs bristfällig och lades snart åt sidan efter en diskussion med handledare.
+ sågs bristfällig och lades snart åt sidan efter en diskussion med handledaren.
  Istället valdes en SR-Vippa.
- Denna bistabila krets syntes vara lösningen på våra problem ty den var
- både simpel och pålitlig.
- Med denna idé byggdes en enkel modell av hjälp av två stycken logiska NAND-grin
-dar.
- Efter vissa komplikationer med testning av denna del av kretsen stod det
- snart klart att detta berodde på att ingångarna lämnades ojordade när tester
+ 
+\end_layout
+
+\begin_layout Standard
+Denna bistabila krets syntes vara lösningen på våra problem ty den var både
+ simpel och pålitlig.
+ Utifrån denna idé byggdes en enkel modell av hjälp av två stycken logiska
+ NAND-grindar.
+ Efter vissa komplikationer med testning av denna kretsdel stod det snart
+ klart att detta berodde på att ingångarna lämnades ojordade när tester
  pågick av motsatt ingång, detta ledde till helt felaktiga mätresultat och
  en ickefungerande krets.
  När detta misstag upptäkts kunde denna del av kretsen snabbt färdigställas.
- Nästa utmaning bestod av att på något sätt uppnå en fördröjning av signalen
+ 
+\end_layout
+
+\begin_layout Standard
+Nästa utmaning bestod av att på något sätt uppnå en fördröjning av signalen
  som återkopplades till reset ingången som får kretsen att sluta pipa.
  Den första idén om lösning på problemet vara att seriekoppla en kondensator
- och få denna att laddas upp för att sedan skicka vidare en inverterad signal,
- men denna idé kasserades efter ett fåtal tester som påvisade dess inkompabilite
-t med resten av kretsen.
- En alternativ lösning till problemet kom att bli att seriekoppla en resistans
+ mellan ut och ingången.
+ Denna tänktes vid utgångssignal släppa genom strömmn tills dess att den
+ var full då den skulle bryta strömmen, denna signal tänkte sedan inverteras
+ för önskvärt resultat.
+ Denna idé kasserades dock efter ett fåtal tester som påvisade dess inkompabilit
+et med resten av kretsen.
+ 
+\end_layout
+
+\begin_layout Standard
+En alternativ lösning till problemet kom att bli att seriekoppla en resistans
  med en kondensator, som båda noggrant uppmättes för att få en eftertraktad
  längd på pipet.
  Utsignalen hämtades över kondensatorn och leddes tillbaka till reset ingången.
- Efter att ha testat den första fördröjningsdelprototypen märktes snart
- att spännisngspotentialen som gick förlorad över resistansen var förstor
- för att få återkopplingen att räknas som en logisk etta och återställa
- vippan.
+ Efter att ha gjort tester märktes snart att spänningsfallet över resistansen
+ var för stor för att få återkopplingen att räknas som en logisk etta och
+ återställa vippan.
  Men efter att ha ändrat förhållandet mellan kondensatorn och resistansen
  (sänkt resistansen och ökat kapasitansen) blev spänningspotentialen på
  återkopplingen tillräcklig för att ändra insignalen.
@@ -492,13 +506,8 @@ Insignal
 \end_layout
 
 \begin_layout Standard
-Denna kretssdel var först tänkt att bestå av en källa som emitterar osammanhänga
-de brus.
- Detta brus skulle sedan filtreras med hjälp av någon slags Shmitt trigger.
- Efter att ha studerat komplexiteten i denna lösning valdes det att primärt
- börja med en simplare lösning och sedan (om tiden tillät) konstruera ett
- mer slumpmässigt alternativ.
- Det bästämdes tidigt att problemet kunde lösas med hjälp oscillatorer.
+Det bestämdes tidigt att insignalen primärt kunde lösas med hjälp av två
+ oscillatorer.
  Två stycken Wein-bryggsoscillatorer konstruerades så att man enkelt kunde
  justera deras frekvenser med hjälp av varsin potentiometer.
  Oscillatorernas frekvenser ställdes sedan in så att deras toppar möttes
@@ -540,14 +549,13 @@ Sammankoppling
 \begin_layout Standard
 När alla enskilda element var färdigbyggda återstod enbart att sammankoppla
  alla dessa kretsar.
- Detta gjordes enklast genom att tänka hur kretsen slutligen skulle fungera.
+ Detta gjordes enklast genom att tänka sig hur kretsen slutligen skulle
+ fungera.
  När det är mörkt i rummet och SR-Vippan ger utsignal ska transistorn som
  matar OP-förstärkaren i ljudoscillatorn öppna source/drain-kanalen så att
  högtalarsignalen börjar svänga.
- Detta löstes genom att koppla insignalen till SR-vippan så att denna skickar
- en stabil utsignal när pipet ska ljuda.
- SR-Vippans utsignal kopplas till en av ingångarna på en AND-grind (inverterad
- NAND-grind).
+ Detta löstes genom att SR-Vippans utsignal kopplas till en av ingångarna
+ på en AND-grind (inverterad NAND-grind).
  På den andra ingången till AND-grinden kopplas utgången från ljuskretsen.
  Detta betyder alltså att när båda dessa ger en logisk etta kommer AND-grindens
  utsignal också ge en logisk etta.
@@ -562,7 +570,7 @@ När alla enskilda element var färdigbyggda återstod enbart att sammankoppla
 
  transistorn som håller ljudoscillatorn stilla.
  Denna koppling ger det sökta resultat, se de olika delarnas funktioner
- under disskussions delen.
+ under disskussionsdelen.
 \end_layout
 
 \begin_layout Standard
@@ -576,7 +584,6 @@ När alla enskilda element var färdigbyggda återstod enbart att sammankoppla
 Resultat
 \end_layout
 
-<<<<<<< HEAD
 \begin_layout Standard
 Projektarbetarna är nöjda med slutresultatet, trots att de inte kunde lägga
  till en krestdel som gav upphåv till en slumpartad pipcykel eller en regelbunde
@@ -649,15 +656,15 @@ I detta projekt är felkällorna väldigt många, men väldigt små; kopplas det
 \begin_layout Standard
 Även med allt detta inräknat i resultatet är medlemmarna förnöjda med kretsens
  slutgiltiga komposition och funktion: Den fungerar som den var avsedd att
- göra, vilket har visat sig såväl i teorin som pratiken.
-=======
+ göra, vilket har visat sig såväl i teorin som pratiken.=======
+\end_layout
+
 \begin_layout Section
 Diskussion
 \end_layout
 
 \begin_layout Subsection
-Ljuskänslig givare
->>>>>>> dc319da267fdc3355809fd3b4892838906a23996
+Ljuskänslig givare>>>>>>> dc319da267fdc3355809fd3b4892838906a23996
 \end_layout
 
 \begin_layout Standard
@@ -899,9 +906,13 @@ Varje gång kretsen startas börjar denna oförklarligt självsvänga.
  ställen.
  Vissa av dessa kablar leder en svängade signal som lätt kan få det att
  uppkomma brus och störningar i andra närliggande kablar.
- Ett annat felande som har upptäckts är att insignalen som egentligen var
+ 
+\end_layout
+
+\begin_layout Standard
+Ett annat felande som har upptäckts är att insignalen, som egentligen var
  tänk att ge en kort slumpmässig puls men som nu ger en periodisk och ganska
- lång puls överskrider den tid som SR-Vippan uppehåller sin utsignal.
+ lång puls, överskrider den tid som SR-Vippan uppehåller sin utsignal.
  Eftersom insignalen fortfarnade ger en puls då SR-Vipppan slår om kommer
  vippan börja shifta mellan ett påslaget och avsängt läge.
  På grund av att kondensatorn är uppladdad efter föregående pip kommer detta
@@ -909,7 +920,7 @@ Varje gång kretsen startas börjar denna oförklarligt självsvänga.
  Detta kan lätt fixas genom att låta insignalen kopplas förbi SR-vippan
  och direkt in i AND-grinden.
  Detta skulle leda till ett längre pip men att SR-bruset försvinner.
- Varför SR-vippan fortfarnde närvarar i kretsen disskuterar i stycke 3.1.
+ Varför SR-vippan fortfarnde närvarar i kretsen disskuteras i stycke 3.1.
  
 \end_layout
 
