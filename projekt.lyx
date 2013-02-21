@@ -194,7 +194,27 @@ minnet
 \end_layout
 
 \begin_layout Standard
-Genom en återkoppling från utgången till kan man få
+Genom en återkoppling från utgången till R-ingången kan man få vippan att
+ återställa sig själv.
+ I återkopplingen laddas en kondensator upp genom en resistans.
+ När spänningen över kondensatorn blir tillräckligt stor, återställs SR-vippan
+ till sitt ursprungsläge.
+ Sambandet mellan spänningen över kondensatorn och tiden beskrivs med formeln
+ 
+\begin_inset Formula $V_{c}=V_{s}(1-e^{-\frac{t}{rc}})$
+\end_inset
+
+, där 
+\begin_inset Formula $V_{s}$
+\end_inset
+
+ är spänningen över RC-nätet, t är uppladdningstiden, R är resistansen och
+ C är kapacitansen.
+ Spänningen 
+\begin_inset Formula $V_{c}$
+\end_inset
+
+ är den spänning som ligger över kondensatorn.
 \end_layout
 
 \begin_layout Subsubsection
@@ -744,20 +764,12 @@ Högtalaren
 \begin_layout Standard
 Tiden som återkopplingen ska hålla signalen bestäms av resistansen samt
  kapacitansen.
- Målet var att få en uppladdningstid på ungefär en halv sekund.
- För att uppnå detta valdes en resistans med motståndet 4,68Ohm samt en
+ Målet var att få en uppladdningstid på ungefär en sekund.
+ För att uppnå detta valdes en resistans med motståndet 4,68 Ohm samt en
  kapacitans på 200uF.
- Dessa valdes för att få en uppladningstid på ungefär en sekund.
- Genom att beräkna 
-\begin_inset Formula $V_{c}=V_{s}(1-e^{-\frac{t}{rc}})$
-\end_inset
-
-, där 
-\begin_inset Formula $V_{s}$
-\end_inset
-
- är spänningen över RC-nätet, t är uppladningstiden, R är resistansen och
- C är kapacitansen.
+ Dessa valdes för att få en uppladdningstid på ungefär en sekund.
+ För att beräkna vilka komponentvärden som behövdes för att uppnå detta
+ användes sambandet mellan spänningen över kondensatorn och tiden.
  Spänningen 
 \begin_inset Formula $V_{c}$
 \end_inset
@@ -768,7 +780,7 @@ Tiden som återkopplingen ska hålla signalen bestäms av resistansen samt
  digital etta och slå om till ursprungsläget.
  För att entydigt kunna bestämma kapacitansen som skulle användas behövde
  en resistans väljas.
- En resistans på 4,68Ohm valdes för att få ett lagom spänningsfall över
+ En resistans på 4,68 Ohm valdes för att få ett lagom spänningsfall över
  resistansen.
  Med denna resistans kunde kapacitansen bestämmas genom att bryta ut C.
  Då fås 
@@ -780,22 +792,22 @@ Tiden som återkopplingen ska hålla signalen bestäms av resistansen samt
 \begin_inset Formula $V_{c}=3$
 \end_inset
 
- samt
+V samt
 \begin_inset Formula $V_{s}=6$
 \end_inset
 
- fås 
+V fås 
 \begin_inset Formula $C=-\frac{1}{4,68*10^{3}*ln(1-\frac{3}{6})}=147*10^{-6}$
 \end_inset
 
-.
+F.
  Eftersom denna kapacitans är svår att få exakt, valdes istället kapacitansen
  till 
 \begin_inset Formula $C=200uF$
 \end_inset
 
- vilket gav en lite längre tid, men då detta inte spelade någon roll för
- kretsen valdes den ändå.
+ vilket gav en lite längre tid, men då detta inte var kritiskt avgörande
+ för kretsens syfte valdes den ändå.
 \end_layout
 
 \begin_layout Subsection
