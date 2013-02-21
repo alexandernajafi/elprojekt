@@ -337,7 +337,8 @@ Det första som gjordes var att dela upp kretsen i mindre delar så att dessa
  en slumpmässig insignal (Slumpkrets), en ljuskänslig del (Ljuskänslig givare),
  en del som begränsade ljudets längd (Vippa) samt en del som producerade
  och emmiterade ett högfrekvent ljud (Ljud).
- Den första skissen kan hittas i bilaga ().
+ Den första skissen kan hittas i ##############################################
+ bilaga ().
  Det bestämdes tidigt att kretsbyggnadsprocessen skulle fokusera på att
  leda till en krets som producerar ett kort högfrekvent ljud då den placeras
  i en mörk omgivning; slumpmässigheten ansågs vara en sekundär prioritering.
@@ -354,27 +355,25 @@ Omplanering av ljuskänslig delkrets
 \end_layout
 
 \begin_layout Standard
-Dagen efter mötet då den första skissen presenterades konstaterades att
- den ljuskänsliga delen skulle placeras tidigare i kretsen, där den skulle
- fungera som brytare för resten av kretsen.
- Detta för att minimera energikonsumtionen då kretsen inte befinner sig
- i mörker.
- Det bästa valet av fototransistor verkade vara en skymningssensor, då den
- skulle skilja på det ljus rummet innehar dagtid och det mörker som infaller
- nattetid.
- En vanlig fototransistor var dock fullt tillräcklig för uppgiften.
+Efter att den första skissen presenterats för vår handledare konstaterades
+ att den ljuskänsliga delen skulle placeras tidigare i kretsen, där den
+ skulle fungera som brytare för resten av kretsen.
  Efter ett möte med handledare hade en fototransistor förvärvats, vilken
  en kretsdel började byggas runt.
- Först testades transistorn genom en ström-spänningsförstärkare, där hela
- kretsen drevs med ett 9 V batteri spänningsdelat till 4,5 V, med osäkert
- resultat.
- Även utan signal in i förstärkaren blev utsignalen lika stor som Vcc.
+ Först testades transistorn genom en ström-spänningsförstärkare.
+ Förstärkaren baserades på en OP-förstärkare av typ TL071CN, ###################
+################## se bilaga().
+ Kretsen drevs med 4,5 V, genererad med ett batteri på 9 V, vilket det spännings
+delades över.
+ Resultatet av detta test var svårt att tolka.
+ Även utan signal in i förstärkaren blev utsignalen lika stor som matningsspänni
+ngen.
  Att detta första försök till ström-spänningsförstärkning blev felaktigt,
  ledde till att det tog lång tid innan det konstaterades att fototransistorn
  inte fungerade.
- Det konstaterades efter några dagar utan framsteg att batteriet ledde till
- märkliga spänningsdelningar över kopplingsplattan ‒ ett problem som konstaterad
-es även av andra grupper.
+ Efter några framgångslösa dagar konstaterades att kopplingen med batteriet
+ ledde till märkliga spänningsdelningar över kopplingsplattan ‒ ett problem
+ som konstaterades även av andra grupper.
 \end_layout
 
 \begin_layout Subsubsection
@@ -382,26 +381,31 @@ Byte av fototransistor
 \end_layout
 
 \begin_layout Standard
-Efter lite research hos andra grupper valdes istället en annan fototransistor.
+Efter diskussioner med och informationssökning hos andra grupper valdes
+ istället en annan fototransistor.
  När denna testades i en krets där transistorn kopplades till ingången på
  en ström-spänningsförstärkare, denna gång drivet med spänningskub, kunde
  det mätas upp en skillnad i utspänning mellan belyst och skuggbelagd fototransi
 stor.
- För att omvandla denna spänningsskillnad till logiska signaler, kopplades
- en komparator efter OP-förstärkaren (TL071CN).
- Den gav dock inte det väntade resultatet.
+ För att omvandla spänningsskillnaden till logiska signaler, kopplades en
+ komparator in efter förstärkaren.
+ Komparatorn var även den baserad på OP-förstärkare TL071CN.
+ Till den positiva ingången kopplades utsignalen från ström-spänningsförstärkare
+n och till den negativa ingången kopplades en jämförelsespänning skapad
+ genom spänningsdelning från 6 V.
+ Komparatorn gav dock inte det väntade resultatet.
  Beräkningen av resistansen för jämförelsespänningen gjordes om flera gånger.
  Det diskuterades också om huruvida den negativa matningsspänningen kunde
  kopplas till jord, eller om det behövdes en negativ spänning.
- Efter försök med båda dessa matningsalternativ, som båda resulterade i
- samma fel, byttes OP-förstärkaren ut mot en annan av samma typ.
+ Efter försök med båda dessa spänningsmatningsalternativ, som båda resulterade
+ i samma fel, byttes OP-förstärkaren ut mot en annan av samma typ.
  Den nya OP-förstärkaren ledde till samma problem, vilket ledde till slutsaten
  att komparatorn hade sammankopplats felaktigt.
  Efter en stunds felsökning och omkoppling tycktes kretsen fungera som planerat.
  Den var dock väldigt opålitlig, med en funktionalitet som höll i sig cirka
  tio minuter, innan det behövdes ny felsökning och omkoppling i en halvtimme.
  Under de tester som gjordes då kretsen var funktionell framkom dock att
- utspänningen från komparatorn blev cirka 0,8 V, istället för de beräknade
+ utspänningen från komparatorn blev cirka 0,8 V, istället för de förväntade
  0 ,då fototransistorn befann sig i mörker.
  Att utföra ännu en komparation gav en ny utspänning på 0,6 V vid mörker.
 \end_layout
@@ -411,18 +415,24 @@ Byte av samtliga OP-förstärkare
 \end_layout
 
 \begin_layout Standard
-Många timmars felsökning senare byttes de tre OP-förstärkarna ut mot OP-förstärk
-are LM2902N, som är fyra OP-förstärkare i en komponent.
- Då det fastslogs att denna fungerade, bestämdes nya resistanser till komparator
-ns jämförelsespänning.
+Många timmars felsökning senare byttes de tre OP-förstärkarna ut mot komponent
+ LM2902N ############################################## (BILAGA), bestående
+ av fyra OP-förstärkare.
+ Då det fastslagits att denna fungerade korrekt, bestämdes nya resistanser
+ till komparatorns jämförelsespänning.
  Då detta fick göras om några gånger, byttes resistanserna ut mot en potentiomet
-er.
+er, för möjlighet till snabba justeringar.
+ Den ena komparatorn kopplades då bort för att den ansågs onödig.
  
 \end_layout
 
 \begin_layout Standard
-HÄR MÅSTE VI FORTSÄTTA MED ATT FÖRKLARA ATT OP-FÖRSTÄRKARNA VAR SÄMST OCH
- ATT DET TOG EN VECKA ATT FATTA DET...
+Slutligen kopplades en inverterare till komparatorns utsignal.
+ Denna provisoriska lösning testades tillsammans med resten av kretsen.
+ Då vi insåg att den inverterade signalen kunde uppnås genom att koppla
+ om ingångarna till komparatorn, med förstärkarens utsignal till komparatorns
+ negativa ingång och jämförelsespänningen till den positiva, togs inverteraren
+ bort.
 \end_layout
 
 \begin_layout Subsection
@@ -557,12 +567,31 @@ När alla enskilda element var färdigbyggda återstod enbart att sammankoppla
 Resultat
 \end_layout
 
-\begin_layout Standard
-
-\end_layout
-
 \begin_layout Section
 Diskussion
+\end_layout
+
+\begin_layout Subsection
+Ljuskänslig givare
+\end_layout
+
+\begin_layout Standard
+Det bestämdes tidigt att den ljuskänsliga delen av kretsen skulle flyttas
+ till kretsens början.
+ Detta gjordes för att minimera energikonsumtionen då kretsen inte befinner
+ sig i mörker.
+\end_layout
+
+\begin_layout Standard
+Denna del av kretsen visade sig tydligt vara den mest problematiska, med
+ många komponenter som fungerade dåligt och som inte kunde testas individuellt,
+ vilket gjorde det svårt att avgöra vilken komponent det var som inte fungerade.
+ Ett tydligt exempel på detta var testerna som gjordes på den första fototransis
+torn.
+ Eftersom varken fototransistorn eller förstärkaren som användes för att
+ testa den fungerade som de skulle, tog det lång tid att komma fram till
+ att de båda behövde bytas ut.
+ Att
 \end_layout
 
 \begin_layout Subsection
@@ -584,8 +613,8 @@ Vid en första anblick av syskonretarens funktion kan man tycka att en SR-vippa
 \end_layout
 
 \begin_layout Standard
-När en etta skickas på ?S?-ingången på SR-vippan lagras en digital etta
- i SR-vippan.
+När en etta skickas på ?S?##############################################3-ingång
+en på SR-vippan lagras en digital etta i SR-vippan.
  En återkoppling från utgången till R-ingången gör dock att SR-vippan återställe
 r sig själv.
  I återkopplingen laddas en kondoensator upp genom en resistans, vilket
@@ -609,8 +638,8 @@ Insignal
 \end_layout
 
 \begin_layout Standard
-För att generera digitala ettor som triggar igång ett pip använde vi oss
- av två stycken wien-bryggor.
+För att generera digitala ettor som triggar igång ett pip användes två stycken
+ wien-bryggor.
  Oscillatorerna var nästan identiska, skillnaden var kapacitanserna som
  användes.
  Med en skillnad på endast 1pF genererades två signaler med en mycket liten
@@ -769,7 +798,7 @@ Bilaga 1/1
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -806,7 +835,7 @@ name "fig:wienbridge"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -843,7 +872,7 @@ name "fig:jklatch"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -880,7 +909,7 @@ name "fig:srlatch"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -914,6 +943,48 @@ name "fig:powermgn"
 \end_inset
 
 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename bilder/sketch.png
+	width 50page%
+	rotateAngle 180
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Första sketch av ett tänkt kretsschema.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:firstsketch"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset Newpage newpage
 \end_inset
 
@@ -924,7 +995,7 @@ name "fig:powermgn"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -990,12 +1061,16 @@ Bridge Circuits - Marying Gain and Balance, Wien Bridge-Based Oscillators.
 Internet
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 www.hyperphysics.phy-astr.gsu.edu/hbase/electronic/flipflop.html
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 http://www.ietlabs.com/pdf/GR_Experimenters/1960/GenRad_Experimenter_Jan_1960.pdf
+\end_layout
+
+\begin_layout Itemize
+http://www.ict.kth.se/courses/IE1204/HING/Teori/opto3r2.pdf
 \end_layout
 
 \end_body
