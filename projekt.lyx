@@ -38,6 +38,11 @@
 \paperorientation portrait
 \suppress_date false
 \use_refstyle 1
+\branch 3.1
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -222,8 +227,8 @@ Fototransistor
 En fototransistor är i huvudsak uppbyggd som en vanlig transistor med skillnaden
  att ljus kan falla in över kollektor-bas-övergången som fungerar som en
  bakspänd diod.
- Backströmmen är beroende av mängden ljus som faller in, ju mer ljus som
- faller in desto större blir backströmmen, samt ljusets våglängd.
+ Backströmmen är beroende av mängden ljus som faller in och ljusets våglängd.
+ Desto större mängd ljus som faller in, ju större blir backströmmen.
  Unikt för fototransistorn är att den genererar en ström och en spänning,
  där strömmen är mycket högre än vad andra fotokomponenter klarar av.
  En nackdel med fototransistorer är att de jämfört med likartade komponenter
@@ -337,8 +342,14 @@ Det första som gjordes var att dela upp kretsen i mindre delar så att dessa
  en slumpmässig insignal (Slumpkrets), en ljuskänslig del (Ljuskänslig givare),
  en del som begränsade ljudets längd (Vippa) samt en del som producerade
  och emmiterade ett högfrekvent ljud (Ljud).
- Den första skissen kan hittas i ##############################################
- bilaga ().
+ Den första skissen kan hittas i Figur 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:firstsketch"
+
+\end_inset
+
+.
  Det bestämdes tidigt att kretsbyggnadsprocessen skulle fokusera på att
  leda till en krets som producerar ett kort högfrekvent ljud då den placeras
  i en mörk omgivning; slumpmässigheten ansågs vara en sekundär prioritering.
@@ -361,8 +372,7 @@ Efter att den första skissen presenterats för vår handledare konstaterades
  Efter ett möte med handledare hade en fototransistor förvärvats, vilken
  en kretsdel började byggas runt.
  Först testades transistorn genom en ström-spänningsförstärkare.
- Förstärkaren baserades på en OP-förstärkare av typ TL071CN, ###################
-################## se bilaga().
+ Förstärkaren baserades på en OP-förstärkare av typ TL071CN.
  Kretsen drevs med 4,5 V, genererad med ett batteri på 9 V, vilket det spännings
 delades över.
  Resultatet av detta test var svårt att tolka.
@@ -416,8 +426,7 @@ Byte av samtliga OP-förstärkare
 
 \begin_layout Standard
 Många timmars felsökning senare byttes de tre OP-förstärkarna ut mot komponent
- LM2902N ############################################## (BILAGA), bestående
- av fyra OP-förstärkare.
+ LM2902N, bestående av fyra OP-förstärkare.
  Då det fastslagits att denna fungerade korrekt, bestämdes nya resistanser
  till komparatorns jämförelsespänning.
  Då detta fick göras om några gånger, byttes resistanserna ut mot en potentiomet
@@ -567,12 +576,88 @@ När alla enskilda element var färdigbyggda återstod enbart att sammankoppla
 Resultat
 \end_layout
 
+<<<<<<< HEAD
+\begin_layout Standard
+Projektarbetarna är nöjda med slutresultatet, trots att de inte kunde lägga
+ till en krestdel som gav upphåv till en slumpartad pipcykel eller en regelbunde
+t skiftande tidsfördröjning.
+ Se bilden i bilaga 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:fullcircuit"
+
+\end_inset
+
+.
+ Däremot är de andra delarna i projektet fullt färdigställda, även detta
+ syns i bilaga 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:fullcircuit"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Svårigheter
+\end_layout
+
+\begin_layout Standard
+Den stora svårigheten som stöttes på blev det faktum att kretsen byggdes
+ utefter planen att just en slumpgenerator skulle styra kretsen.
+ Detta gjorde att alla andra komponenter och kretssektioner byggdes för
+ att kunna hantera insignalen från ett batteri och sedan låta varje del
+ i kretsen utföra den designerade funtionen utan att de andra delarna påverkades
+ av det.
+ Till exempel figuren i bilaga 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:jklatch"
+
+\end_inset
+
+; en kretsdel som enbart bygger på logiska funktioner.
+ Denna komplikation gjorde dock att kretsen blev mer komplicerad än nödvändigt
+ för att utföra den funtion den nu gör, däremot har alla gruppmedlemmar
+ lärt sig mycket om hur olika logiska funktioner och operationer fungerar.
+ Även kunskaper om hur ljuskänsliga komponenter fungerar har införskaffats.
+ 
+\end_layout
+
+\begin_layout Subsection
+Felkällor
+\end_layout
+
+\begin_layout Standard
+I detta projekt är felkällorna väldigt många, men väldigt små; kopplas det
+ ihop rätt fungerar det.
+ Dock finns det en potentiell felkälla i i princip varje komponent.
+ Som sagt är dessa felkällor väldigt små och påverkar slutresultatet väldigt
+ lite.
+ Den största felkällan i kretsen är dock kablarna som använts: Det verkar
+ som om kablarna ger ifrån sig såpass kraftiga elektromagnetiska fält att
+ det bildar störningar i kretsen.
+ Dessa störningar märks mest när man gör kablarna eller vickar lite på dem.
+ Detta problem skulle delvis kunna lösas med kortare kablar, eller med skärmade
+ kablar som skyddar mot kretsens interna fält.
+ 
+\end_layout
+
+\begin_layout Standard
+Även med allt detta inräknat i resultatet är medlemmarna förnöjda med kretsens
+ slutgiltiga komposition och funktion: Den fungerar som den var avsedd att
+ göra, vilket har visat sig såväl i teorin som pratiken.
+=======
 \begin_layout Section
 Diskussion
 \end_layout
 
 \begin_layout Subsection
 Ljuskänslig givare
+>>>>>>> dc319da267fdc3355809fd3b4892838906a23996
 \end_layout
 
 \begin_layout Standard
@@ -591,11 +676,24 @@ torn.
  Eftersom varken fototransistorn eller förstärkaren som användes för att
  testa den fungerade som de skulle, tog det lång tid att komma fram till
  att de båda behövde bytas ut.
- Att
+ Mycket tid spenderades också på att optimera komparationen, för att säkerställa
+ funktionen hos de logiska kretsarna som utgjorde nästa del i kretsen.
+ En extra komparator kopplades in, för att får ner utspänningen vid mörker
+ ytterligare.
+ När inverteraren sedan kopplats in, fastslogs det att det krävdes 3 V in
+ i inverteraren för att utsignalen skulle bli en logisk nolla.
+ De 0,8 V som utgjorde signalen ut från den första komparatorn vid mörker
+ var således en tillräckligt liten spänning för att inverteraren skulle
+ fungera som planerat.
+ Inverteraren kom dock att bli överflödig då insikten att signalen kunde
+ bli omvänd redan i komparatorn nåddes.
+ Eftersom SR-vippan är en logisk del, där gränsen för en logisk etta var
+ 3 V, var de 0,8 V, som komparatorn efter modifikationen gav ut då kretsen
+ placerades i ljus, inget problem då komparatorn kopplades direkt till SR-vippan.
 \end_layout
 
 \begin_layout Subsection
-SR-Vippa
+SR-vippa
 \end_layout
 
 \begin_layout Standard
@@ -613,8 +711,8 @@ Vid en första anblick av syskonretarens funktion kan man tycka att en SR-vippa
 \end_layout
 
 \begin_layout Standard
-När en etta skickas på ?S?##############################################3-ingång
-en på SR-vippan lagras en digital etta i SR-vippan.
+När en etta skickas på S-ingången på SR-vippan lagras en digital etta i
+ SR-vippan.
  En återkoppling från utgången till R-ingången gör dock att SR-vippan återställe
 r sig själv.
  I återkopplingen laddas en kondoensator upp genom en resistans, vilket
@@ -631,6 +729,63 @@ Högtalaren
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Tiden som återkopplingen ska hålla signalen bestäms av resistansen samt
+ kapacitansen.
+ Målet var att få en uppladdningstid på ungefär en halv sekund.
+ För att uppnå detta valdes en resistans med motståndet 4,68Ohm samt en
+ kapacitans på 200uF.
+ Dessa valdes för att få en uppladningstid på ungefär en sekund.
+ Genom att beräkna 
+\begin_inset Formula $V_{c}=V_{s}(1-e^{-\frac{t}{rc}})$
+\end_inset
+
+, där 
+\begin_inset Formula $V_{s}$
+\end_inset
+
+ är spänningen över RC-nätet, t är uppladningstiden, R är resistansen och
+ C är kapacitansen.
+ Spänningen 
+\begin_inset Formula $V_{c}$
+\end_inset
+
+ är den spänning över kondensatorn som i vårt fall behövde vara ungefär
+ 3V.
+ Denna spänning behövdes för att SR-vippan skulle tolka signalen som en
+ digital etta och slå om till ursprungsläget.
+ För att entydigt kunna bestämma kapacitansen som skulle användas behövde
+ en resistans väljas.
+ En resistans på 4,68Ohm valdes för att få ett lagom spänningsfall över
+ resistansen.
+ Med denna resistans kunde kapacitansen bestämmas genom att bryta ut C.
+ Då fås 
+\begin_inset Formula $C=-\frac{t}{R*ln(1-\frac{V_{c}}{V_{s}})}$
+\end_inset
+
+.
+ Med R = 4,68Ohm, t = 1, 
+\begin_inset Formula $V_{c}=3$
+\end_inset
+
+ samt
+\begin_inset Formula $V_{s}=6$
+\end_inset
+
+ fås 
+\begin_inset Formula $C=-\frac{1}{4,68*10^{3}*ln(1-\frac{3}{6})}=147*10^{-6}$
+\end_inset
+
+.
+ Eftersom denna kapacitans är svår att få exakt, valdes istället kapacitansen
+ till 
+\begin_inset Formula $C=200uF$
+\end_inset
+
+ vilket gav en lite längre tid, men då detta inte spelade någon roll för
+ kretsen valdes den ändå.
 \end_layout
 
 \begin_layout Subsection
@@ -783,6 +938,106 @@ reference "fig:powermgn"
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Källor
+\end_layout
+
+\begin_layout Subsection
+Tryckta källor
+\end_layout
+
+\begin_layout Itemize
+Bridge Circuits - Marying Gain and Balance, Wien Bridge-Based Oscillators.
+ Jim Williams, Juni 1990.
+\end_layout
+
+\begin_layout Itemize
+The General Radio Experimenter, A New Generator Of Random Electrical Noise.
+ General Radio Company, West Concord, Mass., U.S.A, Januari 1960.
+ Digitaliserad version:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+http://www.ietlabs.com/pdf/GR_Experimenters/1960/GenRad_Experimenter_Jan_1960.pdf
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Internet
+\end_layout
+
+\begin_layout Itemize
+Hyper Physics Electronics, Flip-flops.
+ Georgia State University, Februari 2013.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+hyperphysics.phy-astr.gsu.edu/hbase/electronic/flipflop.html
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Fundamental Optoelektronik, Fototransistorn.
+ Kungliga Tekniska Högskolan, Informations- och kommunikationsteknik, Februari
+ 2013.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+http://www.ict.kth.se/courses/IE1204/HING/Teori/opto3r2.pdf
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Datablad, OP-förstärkare TL071CN.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+https://www1.elfa.se/data1/wwwroot/assets/datasheets/tl071_eng_tds.pdf
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Datablad, OP-förstärkare LM2902N.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+http://www.datasheetcatalog.org/datasheet2/6/0ep2cg5u3zir6d7op48zff35l8py.pdf
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Datablad, Fototransistor L-7113P3C.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+http://www.kingbright.com/manager/upload/pdf/L-7113P3C%28Ver1287101485.10%29.pdf
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
@@ -946,7 +1201,7 @@ name "fig:powermgn"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1042,35 +1297,6 @@ name "fig:fullcircuit"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-Källor
-\end_layout
-
-\begin_layout Subsection
-Tryckta källor
-\end_layout
-
-\begin_layout Standard
-Bridge Circuits - Marying Gain and Balance, Wien Bridge-Based Oscillators.
- Jim Williams, Juni 1990.
-\end_layout
-
-\begin_layout Subsection
-Internet
-\end_layout
-
-\begin_layout Itemize
-www.hyperphysics.phy-astr.gsu.edu/hbase/electronic/flipflop.html
-\end_layout
-
-\begin_layout Itemize
-http://www.ietlabs.com/pdf/GR_Experimenters/1960/GenRad_Experimenter_Jan_1960.pdf
-\end_layout
-
-\begin_layout Itemize
-http://www.ict.kth.se/courses/IE1204/HING/Teori/opto3r2.pdf
 \end_layout
 
 \end_body
