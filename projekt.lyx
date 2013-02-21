@@ -677,7 +677,8 @@ Tiden som återkopplingen ska hålla signalen bestäms av resistansen samt
  digital etta och slå om till ursprungsläget.
  För att entydigt kunna bestämma kapacitansen som skulle användas behövde
  en resistans väljas.
- Vi valde en på 4,68Ohm för att få ett lagom spänningsfall över resistansen.
+ En resistans på 4,68Ohm valdes för att få ett lagom spänningsfall över
+ resistansen.
  Med denna resistans kunde kapacitansen bestämmas genom att bryta ut C.
  Då fås 
 \begin_inset Formula $C=-\frac{t}{R*ln(1-\frac{V_{c}}{V_{s}})}$
