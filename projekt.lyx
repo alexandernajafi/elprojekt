@@ -595,7 +595,15 @@ torn.
  Eftersom varken fototransistorn eller förstärkaren som användes för att
  testa den fungerade som de skulle, tog det lång tid att komma fram till
  att de båda behövde bytas ut.
- Mycket tid spenderades också på att optimera komparatorerna, för att underlätta
+ Mycket tid spenderades också på att optimera komparationen, för att säkerställa
+ funktionen hos de logiska kretsarna som utgjorde nästa del i kretsen.
+ En extra komparator kopplades in, för att får ner utspänningen vid mörker
+ ytterligare.
+ När inverteraren sedan kopplats in, fastslogs det att det krävdes 3 V in
+ i inverteraren för att utsignalen skulle bli en logisk nolla.
+ De 0,8 V som utgjorde signalen ut från den första komparatorn vid mörker
+ var således en tillräckligt liten spänning för att inverteraren skulle
+ fungera som planerat.
  
 \end_layout
 
