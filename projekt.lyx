@@ -630,8 +630,8 @@ Vid en första anblick av syskonretarens funktion kan man tycka att en SR-vippa
 \end_layout
 
 \begin_layout Standard
-När en etta skickas på ?S?################################################3-ingå
-ngen på SR-vippan lagras en digital etta i SR-vippan.
+När en etta skickas på S-ingången på SR-vippan lagras en digital etta i
+ SR-vippan.
  En återkoppling från utgången till R-ingången gör dock att SR-vippan återställe
 r sig själv.
  I återkopplingen laddas en kondoensator upp genom en resistans, vilket
