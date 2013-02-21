@@ -591,7 +591,8 @@ torn.
  Eftersom varken fototransistorn eller förstärkaren som användes för att
  testa den fungerade som de skulle, tog det lång tid att komma fram till
  att de båda behövde bytas ut.
- Att
+ Mycket tid spenderades också på att optimera komparatorerna, för att underlätta
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -946,7 +947,7 @@ name "fig:powermgn"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1061,6 +1062,11 @@ Bridge Circuits - Marying Gain and Balance, Wien Bridge-Based Oscillators.
 Internet
 \end_layout
 
+\begin_layout Standard
+KÄLLORNA MÅSTE TITULERAS OCH PLACERAS FÖRE BILAGORNA!!!!!!!!! ##################
+############################################
+\end_layout
+
 \begin_layout Itemize
 www.hyperphysics.phy-astr.gsu.edu/hbase/electronic/flipflop.html
 \end_layout
@@ -1071,6 +1077,14 @@ http://www.ietlabs.com/pdf/GR_Experimenters/1960/GenRad_Experimenter_Jan_1960.pd
 
 \begin_layout Itemize
 http://www.ict.kth.se/courses/IE1204/HING/Teori/opto3r2.pdf
+\end_layout
+
+\begin_layout Itemize
+https://www1.elfa.se/data1/wwwroot/assets/datasheets/tl071_eng_tds.pdf
+\end_layout
+
+\begin_layout Itemize
+http://www.datasheetcatalog.org/datasheet2/6/0ep2cg5u3zir6d7op48zff35l8py.pdf
 \end_layout
 
 \end_body
