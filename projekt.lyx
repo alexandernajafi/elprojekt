@@ -115,7 +115,7 @@ Max Wiens uppfinning från 1891, wienbryggan är en sinus-oscillator som idag
  Wienbryggan kan användas för att på ett mycket enkelt sätt generarea en
  klar sinusvåg inom ett mycket brett frekvensband.
  Wienbryggan som beskrevs av Hewlet var dock inte fullt så enkel som den
- som synes i Figur
+ som synes i Figur 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:wienbridge"
