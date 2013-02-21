@@ -638,6 +638,62 @@ Högtalaren
 .
 \end_layout
 
+\begin_layout Standard
+Tiden som återkopplingen ska hålla signalen bestäms av resistansen samt
+ kapacitansen.
+ Målet var att få en uppladdningstid på ungefär en halv sekund.
+ För att uppnå detta valdes en resistans med motståndet 4,68Ohm samt en
+ kapacitans på 200uF.
+ Dessa valdes för att få en uppladningstid på ungefär en sekund.
+ Genom att beräkna 
+\begin_inset Formula $V_{c}=V_{s}(1-e^{-\frac{t}{rc}})$
+\end_inset
+
+, där 
+\begin_inset Formula $V_{s}$
+\end_inset
+
+ är spänningen över RC-nätet, t är uppladningstiden, R är resistansen och
+ C är kapacitansen.
+ Spänningen 
+\begin_inset Formula $Vc$
+\end_inset
+
+ är den spänning över kondensatorn som i vårt fall behövde vara ungefär
+ 3V.
+ Denna spänning behövdes för att SR-vippan skulle tolka signalen som en
+ digital etta och slå om till ursprungsläget.
+ För att entydigt kunna bestämma kapacitansen som skulle användas behövde
+ en resistans väljas.
+ Vi valde en på 4,68Ohm för att få ett lagom spänningsfall över resistansen.
+ Med denna resistans kunde kapacitansen bestämmas genom att bryta ut C.
+ Då fås 
+\begin_inset Formula $C=-\frac{t}{R*ln(1-\frac{V_{c}}{V_{s}})}$
+\end_inset
+
+.
+ Med R = 4,68Ohm, t = 1, 
+\begin_inset Formula $V_{c}=3$
+\end_inset
+
+ samt
+\begin_inset Formula $V_{s}=6$
+\end_inset
+
+ fås 
+\begin_inset Formula $C=-\frac{1}{4,68*10^{3}*ln(1-\frac{3}{6})}=147*10^{-6}$
+\end_inset
+
+.
+ Eftersom denna kapacitans är svår att få exakt, valdes istället kapacitansen
+ till 
+\begin_inset Formula $C=200uF$
+\end_inset
+
+ vilket gav en lite längre tid, men då detta inte spelade någon roll för
+ kretsen valdes den ändå.
+\end_layout
+
 \begin_layout Subsection
 Insignal
 \end_layout
