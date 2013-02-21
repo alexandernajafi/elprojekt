@@ -252,22 +252,22 @@ När projektet påbörjades var tanken att en elektronisk slumpgenerator skulle
 
 \begin_layout Standard
 Den första slumpgeneratorn som kom på tal var en brusfiltrerande krets.
- Denna krets skulle bestå av en del där ett brus uppstår, en del som filtrerar
- bort hela den ursprungliga signalen så att bara bruset återstår.
- Sedan ett bandpassfilter så att bara de önskvärda frekvenserna kommer igenom
- och vidare ut till en förstärkare som förstärker amplutiden på det återstående
+ Denna krets skulle bestå av en del där ett brus uppstår, en del som filtrerade
+ bort hela den ursprungliga signalen så att bara bruset återstod.
+ Sedan ett bandpassfilter så att bara de önskvärda frekvenserna kom igenom
+ och vidare ut till en förstärkare som förstärkte amplutiden på det återstående
  bruset; detta för att med större säkerhet kunna jämföra brusets amplituder
- i en schmitt-trigger, och på så sätt få en någorlunda slumpmässig följd
+ i en schmitt-trigger och på så sätt få en någorlunda slumpmässig följd
  av ettor och nollor.
- Dessa ettor och nollor skulle sedan användas som gate-source-spänning till
- en transistor för att släppa igenom en signal till högtalaren som då på
- gränsen till slumpmässigt borde pipa med en bestämd frekvens.
+ Dessa ettor och nollor skulle användas som gate-source-spänning till en
+ transistor för att släppa igenom en signal till högtalaren som då på gränsen
+ till slumpmässigt borde pipa med en bestämd frekvens.
 \end_layout
 
 \begin_layout Standard
 Det visade sig dock ganska snabbt att det var mycket svårt att filtrera
  ut brus på det sätt det var tänkt, och att den absolut största delen av
- alla brusfiltrerande kretsar som undersökts har som mål att filtrera bort
+ alla brusfiltrerande kretsar som undersökts hade som mål att filtrera bort
  brus, och inte tvärt om.
  Detta gjorde det problematiskt att använda någon form av brus över huvud
  taget.
@@ -278,27 +278,25 @@ Då påbörjades en sökning för att hitta en annan sorts slumpgenerator eller
  pseudo-slumpgenerator.
  Även dessa typer av slumpgeneratorer visade sig väldigt komplicerade, och
  de flesta av dem bestod av väldigt många komponenter.
-\end_layout
-
-\begin_layout Standard
-Däremot hittades en artikel på internet om ett projekt som genomfördes 1960
- som tydligt visar hur man skulle kunna skapa en elektrisk slumpgenerator.
+ Däremot hittades en artikel på internet om ett projekt som genomfördes
+ 1960 som tydligt visar hur man skulle kunna skapa en elektrisk slumpgenerator.
  Detta var den krets med minst komponenter som gav i från sig ett statistiskt
  sett slumpmässigt brus som hittades.
  Även denna krets slopades då den ansågs vara för komplicerad och för stor
- för att appliceras på våra kopplingsplattor, eftersom även denna krets
- hade behövt tillägg i form av en filterkrets för att få rätt frekvensomfång
- och rätt logiska funktion för distinkta pip i högtalaren vid slumpmässiga
- tillfällen.
+ för att appliceras på våra kopplingsplattor.
+ Detta eftersom även denna krets hade behövt tillägg i form av en filterkrets
+ för att få rätt frekvensomfång och rätt logiska funktion för distinkta
+ pip i högtalaren vid slumpmässiga tillfällen.
  
 \end_layout
 
 \begin_layout Standard
 Det finns även andra elektroniska pseudo-slumpgeneratorer som inte ger ifrån
- sig brus, utom som ger ifrån sig signaler i form av pulser.
- Efter att viss efterforskning gjorts insåg man dock att dessa kretsar innehöll
- än fler delar och var än svårare att förstå och inte minst att räkna på.
- Dessutom är det en komplicerad konstruktion.
+ sig brus, utan som ger ifrån sig signaler i form av pulser.
+ Efter att viss efterforskning gjorts insågs det dock att dessa kretsar
+ innehöll ännu fler komponenter och var desto svårare att förstå och inte
+ minst att räkna på.
+ Dessutom var det en komplicerad konstruktion.
  Ett exempel på en sådan slumpgenerator är Richard Leo Galbraiths patenterade
  
 \begin_inset Quotes eld
@@ -315,15 +313,15 @@ Electrical pulse generator using pseudo-random pole distribution
 \begin_layout Standard
 Det sista som diskuterades var en logisk klocka i form av en operationsförstärka
 re som komparator, ett RC-filter samt en potentiometer för att ställa tiden.
- En transistor på utgången med en transientskyddsdiod kan även användas
+ En transistor på utgången med en transientskyddsdiod kunde även användas
  för att möjligöra påkoppling av ett relä.
- I slutet av kretsen kunde även en resistans och en diod kopplas till för
- att ladda ur RC-filtret som används, detta för att återställa tidfördröjningen
+ I slutet av kretsen kunde även en resistans och en diod adderats till för
+ att ladda ur RC-filtret som använts, detta för att återställa tidsfördröjningen
  efter att spänningen bryts.
  Denna upptäckt skedde dock för sent för att den krets som byggts skulle
  hinna ändras, däremot har kretsen redan från början varit byggd för att
- en slump- eller tidsfördröjningskrets skulle kunna kopplas på.
- Därav kretsens utseende.
+ en slump- eller tidsfördröjningskrets skulle kunna kopplas på, något som
+ diskuteras senare i denna text.
 \end_layout
 
 \begin_layout Standard
