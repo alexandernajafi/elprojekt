@@ -668,7 +668,7 @@ Tiden som återkopplingen ska hålla signalen bestäms av resistansen samt
  är spänningen över RC-nätet, t är uppladningstiden, R är resistansen och
  C är kapacitansen.
  Spänningen 
-\begin_inset Formula $Vc$
+\begin_inset Formula $V_{c}$
 \end_inset
 
  är den spänning över kondensatorn som i vårt fall behövde vara ungefär
