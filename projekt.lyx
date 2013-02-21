@@ -337,8 +337,14 @@ Det första som gjordes var att dela upp kretsen i mindre delar så att dessa
  en slumpmässig insignal (Slumpkrets), en ljuskänslig del (Ljuskänslig givare),
  en del som begränsade ljudets längd (Vippa) samt en del som producerade
  och emmiterade ett högfrekvent ljud (Ljud).
- Den första skissen kan hittas i ##############################################
- bilaga ().
+ Den första skissen kan hittas i Figur 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:firstsketch"
+
+\end_inset
+
+.
  Det bestämdes tidigt att kretsbyggnadsprocessen skulle fokusera på att
  leda till en krets som producerar ett kort högfrekvent ljud då den placeras
  i en mörk omgivning; slumpmässigheten ansågs vara en sekundär prioritering.
@@ -361,8 +367,7 @@ Efter att den första skissen presenterats för vår handledare konstaterades
  Efter ett möte med handledare hade en fototransistor förvärvats, vilken
  en kretsdel började byggas runt.
  Först testades transistorn genom en ström-spänningsförstärkare.
- Förstärkaren baserades på en OP-förstärkare av typ TL071CN, ###################
-################## se bilaga().
+ Förstärkaren baserades på en OP-förstärkare av typ TL071CN.
  Kretsen drevs med 4,5 V, genererad med ett batteri på 9 V, vilket det spännings
 delades över.
  Resultatet av detta test var svårt att tolka.
@@ -416,8 +421,7 @@ Byte av samtliga OP-förstärkare
 
 \begin_layout Standard
 Många timmars felsökning senare byttes de tre OP-förstärkarna ut mot komponent
- LM2902N ############################################## (BILAGA), bestående
- av fyra OP-förstärkare.
+ LM2902N, bestående av fyra OP-förstärkare.
  Då det fastslagits att denna fungerade korrekt, bestämdes nya resistanser
  till komparatorns jämförelsespänning.
  Då detta fick göras om några gånger, byttes resistanserna ut mot en potentiomet
