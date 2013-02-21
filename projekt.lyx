@@ -604,11 +604,15 @@ torn.
  De 0,8 V som utgjorde signalen ut från den första komparatorn vid mörker
  var således en tillräckligt liten spänning för att inverteraren skulle
  fungera som planerat.
- Inverteraren kom dock att bli överflödig då idén att 
+ Inverteraren kom dock att bli överflödig då insikten att signalen kunde
+ bli omvänd redan i komparatorn nåddes.
+ Eftersom SR-vippan är en logisk del, där gränsen för en logisk etta var
+ 3 V, var de 0,8 V, som komparatorn efter modifikationen gav ut då kretsen
+ placerades i ljus, inget problem då komparatorn kopplades direkt till SR-vippan.
 \end_layout
 
 \begin_layout Subsection
-SR-Vippa
+SR-vippa
 \end_layout
 
 \begin_layout Standard
