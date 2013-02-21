@@ -222,8 +222,8 @@ Fototransistor
 En fototransistor är i huvudsak uppbyggd som en vanlig transistor med skillnaden
  att ljus kan falla in över kollektor-bas-övergången som fungerar som en
  bakspänd diod.
- Backströmmen är beroende av mängden ljus som faller in, ju mer ljus som
- faller in desto större blir backströmmen, samt ljusets våglängd.
+ Backströmmen är beroende av mängden ljus som faller in och ljusets våglängd.
+ Desto större mängd ljus som faller in, ju större blir backströmmen.
  Unikt för fototransistorn är att den genererar en ström och en spänning,
  där strömmen är mycket högre än vad andra fotokomponenter klarar av.
  En nackdel med fototransistorer är att de jämfört med likartade komponenter
@@ -860,6 +860,65 @@ reference "fig:powermgn"
 \end_layout
 
 \begin_layout Section
+Källor
+\end_layout
+
+\begin_layout Subsection
+Tryckta källor
+\end_layout
+
+\begin_layout Itemize
+Bridge Circuits - Marying Gain and Balance, Wien Bridge-Based Oscillators.
+ Jim Williams, Juni 1990.
+\end_layout
+
+\begin_layout Itemize
+The General Radio Experimenter, A New Generator Of Random Electrical Noise.
+ General Radio Company, West Concord, Mass., U.S.A, Januari 1960.
+ (Digitaliserad version, http://www.ietlabs.com/pdf/GR_Experimenters/1960/GenRad_E
+xperimenter_Jan_1960.pdf)
+\end_layout
+
+\begin_layout Subsection
+Internet
+\end_layout
+
+\begin_layout Itemize
+Hyper Physics Electronics, Flip-flops.
+ Georgia State University, Februari 2013.
+ hyperphysics.phy-astr.gsu.edu/hbase/electronic/flipflop.html
+\end_layout
+
+\begin_layout Itemize
+Fundamental Optoelektronik, Fototransistorn.
+ Kungliga Tekniska Högskolan, Informations- och kommunikationsteknik, Februari
+ 2013.
+ http://www.ict.kth.se/courses/IE1204/HING/Teori/opto3r2.pdf
+\end_layout
+
+\begin_layout Itemize
+Datablad, OP-förstärkare TL071.
+ https://www1.elfa.se/data1/wwwroot/assets/datasheets/tl071_eng_tds.pdf
+\end_layout
+
+\begin_layout Itemize
+Datablad, OP-förstärkare LM2902N.
+ http://www.datasheetcatalog.org/datasheet2/6/0ep2cg5u3zir6d7op48zff35l8py.pdf
+\end_layout
+
+\begin_layout Itemize
+Datablad, Fototransistor L-7113P3C.
+ http://www.kingbright.com/manager/upload/pdf/L-7113P3C%28Ver1287101485.10%29.pdf
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Bilaga 1/1
 \end_layout
 
@@ -1111,48 +1170,6 @@ name "fig:fullcircuit"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-Källor
-\end_layout
-
-\begin_layout Subsection
-Tryckta källor
-\end_layout
-
-\begin_layout Standard
-Bridge Circuits - Marying Gain and Balance, Wien Bridge-Based Oscillators.
- Jim Williams, Juni 1990.
-\end_layout
-
-\begin_layout Subsection
-Internet
-\end_layout
-
-\begin_layout Standard
-KÄLLORNA MÅSTE TITULERAS OCH PLACERAS FÖRE BILAGORNA!!!!!!!!! ##################
-############################################
-\end_layout
-
-\begin_layout Itemize
-www.hyperphysics.phy-astr.gsu.edu/hbase/electronic/flipflop.html
-\end_layout
-
-\begin_layout Itemize
-http://www.ietlabs.com/pdf/GR_Experimenters/1960/GenRad_Experimenter_Jan_1960.pdf
-\end_layout
-
-\begin_layout Itemize
-http://www.ict.kth.se/courses/IE1204/HING/Teori/opto3r2.pdf
-\end_layout
-
-\begin_layout Itemize
-https://www1.elfa.se/data1/wwwroot/assets/datasheets/tl071_eng_tds.pdf
-\end_layout
-
-\begin_layout Itemize
-http://www.datasheetcatalog.org/datasheet2/6/0ep2cg5u3zir6d7op48zff35l8py.pdf
 \end_layout
 
 \end_body
