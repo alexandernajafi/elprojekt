@@ -154,7 +154,7 @@ SR-vippa
 \end_layout
 
 \begin_layout Standard
-Sr-vippan är den enklaste av alla vippor.
+SR-vippan är den enklaste av alla vippor.
  Dess konstruktion tillåter den att lagra ett digitalt värde, ett eller
  noll.
  Dess funktioner är dock få.
@@ -190,6 +190,10 @@ minnet
  Det bör nämnas att utgången som det lagrade värdet kan hämtas på både är
  Q1 och Q2.
  Q2 är invers till Q1.
+\end_layout
+
+\begin_layout Standard
+Genom en återkoppling från utgången till kan man få
 \end_layout
 
 \begin_layout Subsubsection
@@ -656,7 +660,7 @@ I detta projekt är felkällorna väldigt många, men väldigt små; kopplas det
 \begin_layout Standard
 Även med allt detta inräknat i resultatet är medlemmarna förnöjda med kretsens
  slutgiltiga komposition och funktion: Den fungerar som den var avsedd att
- göra, vilket har visat sig såväl i teorin som pratiken.=======
+ göra, vilket har visat sig såväl i teorin som pratiken.
 \end_layout
 
 \begin_layout Section
@@ -664,7 +668,7 @@ Diskussion
 \end_layout
 
 \begin_layout Subsection
-Ljuskänslig givare>>>>>>> dc319da267fdc3355809fd3b4892838906a23996
+Ljuskänslig givare
 \end_layout
 
 \begin_layout Standard
@@ -722,8 +726,8 @@ När en etta skickas på S-ingången på SR-vippan lagras en digital etta i
  SR-vippan.
  En återkoppling från utgången till R-ingången gör dock att SR-vippan återställe
 r sig själv.
- I återkopplingen laddas en kondoensator upp genom en resistans, vilket
- tar en viss tid.
+ I återkopplingen laddas en kondensator upp genom en resistans, vilket tar
+ en viss tid.
  När kondensatorn laddats upp tillräckligt mycket återställs SR-vippan till
  sitt ursprungsläge, vilket var en digital nolla.
  Under tiden som SR-vippan hade en digital etta som lagrat värde pep högtalaren,
