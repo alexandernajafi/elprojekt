@@ -337,12 +337,12 @@ Utförande
 
 \begin_layout Standard
 Det första som gjordes var att dela upp kretsen i mindre delar så att dessa
- kunde byggas och testas separat för att sedan sammanfoga.
+ kunde byggas och testas separat för att sedan sammanfogas.
  Den första skissen på hur kretsen väntades se ut bestod av en del som gav
  en slumpmässig insignal (Insignal), en ljuskänslig del (Ljuskänslig givare),
  en del som begränsade ljudets längd (Vippa) samt en del som producerade
  och emmiterade ett högfrekvent ljud (Ljud).
- Den första skissen kan hittas i Figur 
+ Den första skissen på en eventuell krets kan ses i Figur 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:firstsketch"
@@ -382,8 +382,7 @@ ngen.
  ledde till att det tog lång tid innan det konstaterades att fototransistorn
  inte fungerade.
  Efter några framgångslösa dagar konstaterades att kopplingen med batteriet
- ledde till märkliga spänningsdelningar över kopplingsplattan ‒ ett problem
- som konstaterades även av andra grupper.
+ ledde till märkliga spänningsdelningar över kopplingsplattan.
 \end_layout
 
 \begin_layout Subsubsection
@@ -399,23 +398,23 @@ Efter diskussioner med och informationssökning hos andra grupper valdes
 stor.
  För att omvandla spänningsskillnaden till logiska signaler, kopplades en
  komparator in efter förstärkaren.
- Komparatorn var även den baserad på OP-förstärkare TL071CN.
+ Komparatorn var även baserad på OP-förstärkare TL071CN.
  Till den positiva ingången kopplades utsignalen från ström-spänningsförstärkare
-n och till den negativa ingången kopplades en jämförelsespänning skapad
- genom spänningsdelning från 6 V.
+n och till den negativa ingången kopplades en referensspänning skapad genom
+ spänningsdelning från 6 V.
  Komparatorn gav dock inte det väntade resultatet.
  Beräkningen av resistansen för jämförelsespänningen gjordes om flera gånger.
  Det diskuterades också om huruvida den negativa matningsspänningen kunde
  kopplas till jord, eller om det behövdes en negativ spänning.
  Efter försök med båda dessa spänningsmatningsalternativ, som båda resulterade
  i samma fel, byttes OP-förstärkaren ut mot en annan av samma typ.
- Den nya OP-förstärkaren ledde till samma problem, vilket ledde till slutsaten
+ Den nya OP-förstärkaren ledde till samma problem, vilket ledde till slutsatsen
  att komparatorn hade sammankopplats felaktigt.
  Efter en stunds felsökning och omkoppling tycktes kretsen fungera som planerat.
  Den var dock väldigt opålitlig, med en funktionalitet som höll i sig cirka
  tio minuter, innan det behövdes ny felsökning och omkoppling i en halvtimme.
  Under de tester som gjordes då kretsen var funktionell framkom dock att
- utspänningen från komparatorn blev cirka 0,8 V, istället för de förväntade
+ utspänningen från komparatorn var cirka 0,8 V, istället för de förväntade
  0 ,då fototransistorn befann sig i mörker.
  Att utföra ännu en komparation gav en ny utspänning på 0,6 V vid mörker.
 \end_layout
@@ -425,7 +424,7 @@ Byte av samtliga OP-förstärkare
 \end_layout
 
 \begin_layout Standard
-Många timmars felsökning senare byttes de tre OP-förstärkarna ut mot komponent
+Många timmars felsökning senare byttes de tre OP-förstärkarna ut mot komponenten
  LM2902N, bestående av fyra OP-förstärkare.
  Då det fastslagits att denna fungerade korrekt, bestämdes nya resistanser
  till komparatorns jämförelsespänning.
@@ -459,7 +458,6 @@ Kretsen som skulle göra att utsignalen höll sig stabil under den tiden då
  Den första prototypen tänktes byggas med en JK-Vippa men denna lösning
  sågs bristfällig och lades snart åt sidan efter en diskussion med handledaren.
  Istället valdes en SR-Vippa.
- 
 \end_layout
 
 \begin_layout Standard
