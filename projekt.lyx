@@ -530,7 +530,7 @@ När alla enskilda element var färdigbyggda återstod enbart att sammankoppla
  SR-Vippans utsignal kopplas till en av ingångarna på en AND-grind (inverterad
  NAND-grind).
  På den andra ingången till AND-grinden kopplas utgången från ljuskretsen.
- Detta betyder alltså att när båda dessa ger en logis etta kommer AND-grindens
+ Detta betyder alltså att när båda dessa ger en logisk etta kommer AND-grindens
  utsignal också ge en logisk etta.
  Spänningen på denna logiska etta ligger på runt 6V som räcker gott för
  att 
