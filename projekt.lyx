@@ -74,10 +74,26 @@ Projekt i Elektronik, ESS010.
 \end_layout
 
 \begin_layout Author
-Gustav Berg, Erik Engman, Linus Hellman, Cornelia Kramer och Alexander Najafi
+Gustav Berg
+\begin_inset Newline newline
+\end_inset
+
+Erik Engman
+\begin_inset Newline newline
+\end_inset
+
+Linus Hellman
+\begin_inset Newline newline
+\end_inset
+
+Cornelia Kramer
+\begin_inset Newline newline
+\end_inset
+
+Alexander Najafi
 \end_layout
 
-\begin_layout Date
+\begin_layout Address
 2013-02-22
 \end_layout
 
@@ -1066,14 +1082,16 @@ http://www.kingbright.com/manager/upload/pdf/L-7113P3C%28Ver1287101485.10%29.pdf
 \end_layout
 
 \begin_layout Section
+\start_of_appendix
 Bilaga
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1307,13 +1325,6 @@ name "fig:fullcircuit"
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
 \end_inset
 
 
